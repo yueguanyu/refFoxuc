@@ -1,0 +1,66 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "510K服务器", "服务器组件\GameServer.vcproj", "{390B89DC-4355-442B-AD09-91F6D9AF32DD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "510K客户端", "客户端组件\GameClient.vcproj", "{3A34A9AE-B81F-4884-9D1C-316B9B204899}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug_Unicode = Debug_Unicode
+		Release = Release
+		Release_Unicode = Release_Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug.ActiveCfg = Debug|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug.Build.0 = Debug|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug_Unicode.ActiveCfg = Debug_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug_Unicode.Build.0 = Debug_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release.ActiveCfg = Release|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release.Build.0 = Release|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release_Unicode.ActiveCfg = Release_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release_Unicode.Build.0 = Release_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug.ActiveCfg = Debug|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug.Build.0 = Debug|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug_Unicode.ActiveCfg = Debug_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug_Unicode.Build.0 = Debug_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release.ActiveCfg = Release|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release.Build.0 = Release|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release_Unicode.ActiveCfg = Release_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release_Unicode.Build.0 = Release_Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Unicode|Win32 = Debug_Unicode|Win32
+		Debug|Win32 = Debug|Win32
+		Release_Unicode|Win32 = Release_Unicode|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug_Unicode|Win32.ActiveCfg = Debug_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug_Unicode|Win32.Build.0 = Debug_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Debug|Win32.Build.0 = Debug|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release_Unicode|Win32.ActiveCfg = Release_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release_Unicode|Win32.Build.0 = Release_Unicode|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release|Win32.ActiveCfg = Release|Win32
+		{390B89DC-4355-442B-AD09-91F6D9AF32DD}.Release|Win32.Build.0 = Release|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug_Unicode|Win32.ActiveCfg = Debug_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug_Unicode|Win32.Build.0 = Debug_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Debug|Win32.Build.0 = Debug|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release_Unicode|Win32.ActiveCfg = Release_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release_Unicode|Win32.Build.0 = Release_Unicode|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release|Win32.ActiveCfg = Release|Win32
+		{3A34A9AE-B81F-4884-9D1C-316B9B204899}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,91 @@
+﻿生成启动时间为 2013-2-11 16:25:32。
+     1>项目“D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\baseclasses.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\baseclasses.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Visual Studio 2010\VC\bin\CL.exe /c /I. /I..\..\..\..\include /Zi /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _LIB /D _WIN32_DCOM /D DEBUG /D WINVER=0x400 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"streams.h" /Fp".\Debug/baseclasses.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gz /TP /analyze- /errorReport:prompt dllentry.cpp
+         dllentry.cpp
+     1>D:\Directx SDK 2004\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         D:\Visual Studio 2010\VC\bin\CL.exe /c /I. /I..\..\..\..\include /Zi /nologo /W3 /WX- /Od /Oy- /D _DEBUG /D WIN32 /D _LIB /D _WIN32_DCOM /D DEBUG /D WINVER=0x400 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"streams.h" /Fp".\Debug/baseclasses.pch" /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /Gz /TP /analyze- /errorReport:prompt amextra.cpp amfilter.cpp amvideo.cpp combase.cpp cprop.cpp ctlutil.cpp ddmm.cpp dllsetup.cpp mtype.cpp outputq.cpp pstream.cpp pullpin.cpp refclock.cpp renbase.cpp schedule.cpp seekpt.cpp source.cpp strmctl.cpp sysclock.cpp transfrm.cpp transip.cpp videoctl.cpp vtrans.cpp winctrl.cpp winutil.cpp wxdebug.cpp wxlist.cpp wxutil.cpp
+         amextra.cpp
+         amfilter.cpp
+         amvideo.cpp
+         combase.cpp
+         cprop.cpp
+         ctlutil.cpp
+         ddmm.cpp
+         dllsetup.cpp
+         mtype.cpp
+         outputq.cpp
+         pstream.cpp
+         pullpin.cpp
+         refclock.cpp
+         renbase.cpp
+         schedule.cpp
+         seekpt.cpp
+         source.cpp
+         strmctl.cpp
+         sysclock.cpp
+         transfrm.cpp
+         正在生成代码...
+         正在编译...
+         transip.cpp
+         videoctl.cpp
+         vtrans.cpp
+         winctrl.cpp
+         winutil.cpp
+         wxdebug.cpp
+     1>wxdebug.cpp(11): warning C4603: “_WINDLL”: 未定义宏或在预编译头使用后定义发生改变
+                 将宏添加到预编译头中，而不是在此处定义
+                 wxdebug.cpp(13) : 使用预编译头
+     1>wxdebug.cpp(534): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Visual Studio 2010\VC\include\stdio.h(363) : 参见“_vsnprintf”的声明
+     1>wxdebug.cpp(777): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Visual Studio 2010\VC\include\stdio.h(371) : 参见“vsprintf”的声明
+     1>D:\Directx SDK 2004\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>wxdebug.cpp(1167): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Visual Studio 2010\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         wxlist.cpp
+         wxutil.cpp
+         正在生成代码...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\.\Debug\baseclasses.lib) 与 Library 的 OutputFile 属性值(D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\debug\strmbasd.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(baseclasses) 与 Library 的 OutputFile 属性值(strmbasd)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+       Lib:
+         D:\Visual Studio 2010\VC\bin\Lib.exe /OUT:"debug\strmbasd.lib" /NOLOGO .\Debug/amextra.obj
+         .\Debug/amfilter.obj
+         .\Debug/amvideo.obj
+         .\Debug/combase.obj
+         .\Debug/cprop.obj
+         .\Debug/ctlutil.obj
+         .\Debug/ddmm.obj
+         .\Debug/dllentry.obj
+         .\Debug/dllsetup.obj
+         .\Debug/mtype.obj
+         .\Debug/outputq.obj
+         .\Debug/pstream.obj
+         .\Debug/pullpin.obj
+         .\Debug/refclock.obj
+         .\Debug/renbase.obj
+         .\Debug/schedule.obj
+         .\Debug/seekpt.obj
+         .\Debug/source.obj
+         .\Debug/strmctl.obj
+         .\Debug/sysclock.obj
+         .\Debug/transfrm.obj
+         .\Debug/transip.obj
+         .\Debug/videoctl.obj
+         .\Debug/vtrans.obj
+         .\Debug/winctrl.obj
+         .\Debug/winutil.obj
+         .\Debug/wxdebug.obj
+         .\Debug/wxlist.obj
+         .\Debug/wxutil.obj ..\..\..\..\lib\strmiids.lib  /nodefaultlib  
+         baseclasses.vcxproj -> D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\.\Debug\baseclasses.lib
+       FinalizeBuildStatus:
+         正在删除文件“.\Debug\baseclasses.unsuccessfulbuild”。
+         正在对“.\Debug\baseclasses.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\baseclasses.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.81

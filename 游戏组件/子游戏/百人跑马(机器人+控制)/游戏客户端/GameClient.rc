@@ -1,0 +1,489 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "百人跑马游戏客户端"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "HorseBattle.EXE"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "HorseBattle.EXE"
+            VALUE "ProductName", "百人跑马游戏客户端"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_BT_QUANCHANG        BITMAP                  "res\\BT_QUANCHANG.bmp"
+IDB_BT_GEREN            BITMAP                  "res\\BT_GEREN.bmp"
+IDB_BT_XIAZHU           BITMAP                  "res\\BT_XIAZHU.bmp"
+IDB_BT_SHUOMING         BITMAP                  "res\\BT_SHUOMING.bmp"
+IDB_BT_TONGJI           BITMAP                  "res\\BT_TONGJI.bmp"
+IDB_BT_JIAN             BITMAP                  "res\\BT_JIAN.bmp"
+IDB_BT_JIA              BITMAP                  "res\\BT_JIA.bmp"
+IDB_BT_1000             BITMAP                  "res\\BT_1000.bmp"
+IDB_BT_10W              BITMAP                  "res\\BT_10W.bmp"
+IDB_BT_100W             BITMAP                  "res\\BT_100W.bmp"
+IDB_BT_1W               BITMAP                  "res\\BT_1W.bmp"
+IDB_BT_REPLAYLASTROUND  BITMAP                  "res\\BT_REPLAYLASTROUND.bmp"
+IDB_BT_ENTER            BITMAP                  "res\\BT_ENTER.bmp"
+IDB_BT_REPLAY           BITMAP                  "res\\BT_REPLAY.bmp"
+IDB_BACK_MESSAGE        BITMAP                  "res\\BACK_MESSAGE.bmp"
+IDB_BT_MESSAGE          BITMAP                  "res\\BT_MESSAGE.bmp"
+IDB_BT_CLOSE            BITMAP                  "res\\BT_CLOSE.bmp"
+IDB_HISTORYSCORE_M      BITMAP                  "res\\HISTORYSCORE_M.bmp"
+IDB_HISTORYSCORE_T      BITMAP                  "res\\HISTORYSCORE_T.bmp"
+IDB_HISTORYSCORE_B      BITMAP                  "res\\HISTORYSCORE_B.bmp"
+IDB_BT_HISTORYSCORE     BITMAP                  "res\\BT_HISTORYSCORE.bmp"
+IDB_BT_CLOSE_HISTORYSCORE BITMAP                  "res\\BT_CLOSE_HISTORYSCORE.bmp"
+IDB_BTONGJI_FRAME       BITMAP                  "res\\TONGJI_FRAME.bmp"
+IDB_LINE                BITMAP                  "res\\LINE.bmp"
+IDB_BT_CLOSE_TWO        BITMAP                  "res\\BT_CLOSE_TWO.bmp"
+IDB_BT_CLOSEGAMESCORE   BITMAP                  "res\\BT_CLOSEGAMESCORE.bmp"
+IDB_BET_RECORD          BITMAP                  "res\\BET_RECORD.bmp"
+IDB_BT_JILU             BITMAP                  "res\\BT_JILU.bmp"
+IDB_BT_CLOSE_BL         BITMAP                  "res\\BT_CLOSE_BL.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BANK_STORAGE DIALOGEX 0, 0, 251, 138
+STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "关闭",IDCANCEL,165,114,45,12
+    LTEXT           "当前元宝数：",-1,21,29,49,8
+    LTEXT           "...",IDC_GAME_GOLD,83,29,92,9
+    LTEXT           "银行元宝数：",-1,21,46,49,8
+    LTEXT           "...",IDC_STORAGE_GOLD,83,44,91,9
+    LTEXT           "提取元宝数：",-1,21,64,53,8
+    PUSHBUTTON      "确定",IDOK,41,115,45,12
+    EDITTEXT        IDC_IN_COUNT,82,61,95,12,ES_AUTOHSCROLL
+    LTEXT           "密             码：",IDC_STATIC_PASS,21,85,62,8
+    EDITTEXT        IDC_USER_PASSWORD,82,84,95,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_CHECK_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    180,63,65,8
+END
+
+IDD_DIALOG_SYSTEM DIALOGEX 0, 0, 422, 311
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Secret"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "....",IDC_STATIC_TIMES,24,61,45,8
+    LTEXT           "....",IDC_STATIC_AREA,24,79,47,8
+    COMBOBOX        IDC_COMBO_TIMES,82,57,48,79,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "....",IDC_STATIC_NOTIC,24,220,90,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,22,235,337,1
+    CTEXT           ":::::",IDC_STATIC_TEXT,30,236,320,11
+    PUSHBUTTON      "::::::::",IDC_BUTTON_RESET,59,287,50,14
+    PUSHBUTTON      "::::::::",IDC_BUTTON_SYN,130,287,50,14
+    PUSHBUTTON      "::::::::",IDC_BUTTON_OK,201,287,50,14
+    PUSHBUTTON      "::::::::",IDC_BUTTON_CANCEL,272,287,50,14
+    CONTROL         "____",IDC_RADIO_1_6,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,27,109,28,10
+    CONTROL         "____",IDC_RADIO_1_5,"Button",BS_AUTORADIOBUTTON,94,109,
+                    28,10
+    CONTROL         "____",IDC_RADIO_1_4,"Button",BS_AUTORADIOBUTTON,161,109,
+                    28,10
+    CONTROL         "____",IDC_RADIO_1_3,"Button",BS_AUTORADIOBUTTON,228,109,
+                    28,10
+    CONTROL         "____",IDC_RADIO_1_2,"Button",BS_AUTORADIOBUTTON,295,109,
+                    28,10
+    CONTROL         "____",IDC_RADIO_2_6,"Button",BS_AUTORADIOBUTTON,27,131,
+                    28,10
+    CONTROL         "____",IDC_RADIO_2_5,"Button",BS_AUTORADIOBUTTON,94,131,
+                    28,10
+    CONTROL         "____",IDC_RADIO_2_4,"Button",BS_AUTORADIOBUTTON,161,131,
+                    28,10
+    CONTROL         "____",IDC_RADIO_2_3,"Button",BS_AUTORADIOBUTTON,228,131,
+                    28,10
+    CONTROL         "____",IDC_RADIO_3_6,"Button",BS_AUTORADIOBUTTON,27,153,
+                    28,10
+    CONTROL         "____",IDC_RADIO_3_5,"Button",BS_AUTORADIOBUTTON,94,153,
+                    28,10
+    CONTROL         "____",IDC_RADIO_3_4,"Button",BS_AUTORADIOBUTTON,161,153,
+                    28,10
+    CONTROL         "____",IDC_RADIO_4_6,"Button",BS_AUTORADIOBUTTON,27,175,
+                    28,10
+    CONTROL         "____",IDC_RADIO_4_5,"Button",BS_AUTORADIOBUTTON,94,175,
+                    28,10
+    CONTROL         "____",IDC_RADIO_5_6,"Button",BS_AUTORADIOBUTTON,27,197,
+                    28,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,25,97,330,1
+    EDITTEXT        IDC_EDIT_C_1_6,57,105,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_1_5,124,105,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_1_4,192,105,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_1_3,260,105,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_1_2,327,105,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_2_6,57,127,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_3_6,57,149,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_4_6,57,171,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_5_6,57,193,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_2_5,124,127,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_3_5,124,149,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_4_5,124,171,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_2_4,192,127,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_3_4,192,149,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_C_2_3,260,127,19,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_INFO,23,248,334,35,ES_CENTER | ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "单选1",IDC_RADIO_NWE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,263,197,99,10
+    CONTROL         "单选1",IDC_RADIO_NEXT,"Button",BS_AUTORADIOBUTTON,190,
+                    197,58,10
+    GROUPBOX        "静态",IDC_STATIC_ALL_BET,134,4,279,89
+    LTEXT           "静态",IDC_ST_AREA1,156,13,42,8
+    LTEXT           "静态",IDC_ST_AREA2,208,13,42,8
+    LTEXT           "静态",IDC_ST_AREA3,260,13,42,8
+    LTEXT           "静态",IDC_ST_AREA4,314,13,42,8
+    LTEXT           "静态",IDC_ST_AREA5,364,13,42,8
+    LTEXT           "静态",IDC_ST_AREA6,156,31,42,8
+    LTEXT           "静态",IDC_ST_AREA7,208,31,42,8
+    LTEXT           "静态",IDC_ST_AREA8,260,31,42,8
+    LTEXT           "静态",IDC_ST_AREA9,314,31,42,8
+    LTEXT           "静态",IDC_ST_AREA10,156,47,42,8
+    LTEXT           "静态",IDC_ST_AREA11,208,47,42,8
+    LTEXT           "静态",IDC_ST_AREA12,260,47,42,8
+    LTEXT           "静态",IDC_ST_AREA13,156,63,42,8
+    LTEXT           "静态",IDC_ST_AREA14,208,64,42,8
+    LTEXT           "静态",IDC_ST_AREA15,156,80,42,8
+END
+
+IDD_DIALOG_BET DIALOGEX 0, 0, 425, 250
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "新宋体", 400, 0, 0x86
+BEGIN
+    EDITTEXT        IDC_EDIT_1_6,41,66,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_1_5,119,66,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_1_4,194,66,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_1_3,263,66,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_1_2,344,66,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_2_6,41,98,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_2_5,119,98,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_2_4,194,98,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_2_3,263,98,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_3_6,41,130,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_3_5,119,130,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_3_4,194,130,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_4_6,41,162,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_4_5,119,162,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_5_6,41,193,54,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_TRANSPARENT
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_1_6,29,66,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_1_5,107,67,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_1_4,183,67,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_1_3,253,67,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_1_2,333,66,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_2_6,28,99,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_2_5,108,99,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_2_4,181,98,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_2_3,254,98,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_3_6,27,131,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_3_5,108,130,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_3_4,183,130,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_4_6,27,164,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_4_5,105,162,11,14
+    PUSHBUTTON      "",IDC_BUTTON_REDUCE_5_6,29,191,11,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_1_6,87,54,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_1_5,158,52,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_1_4,234,53,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_1_3,305,52,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_1_2,379,53,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_2_6,85,84,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_2_5,157,85,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_2_4,229,84,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_2_3,294,85,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_3_6,85,119,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_3_5,161,118,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_3_4,229,115,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_4_6,78,149,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_4_5,157,152,16,14
+    PUSHBUTTON      "",IDC_BUTTON_ADD_5_6,81,179,16,14
+    PUSHBUTTON      "",IDC_BUTTON_1000,209,176,34,14
+    PUSHBUTTON      "",IDC_BUTTON_1W,260,176,34,14
+    PUSHBUTTON      "",IDC_BUTTON_10W,312,163,34,14
+    PUSHBUTTON      "",IDC_BUTTON_100W,372,161,34,14
+    PUSHBUTTON      "",IDC_BUTTON_DETERMINE,208,208,33,14
+    PUSHBUTTON      "",IDC_BUTTON_RESET,255,209,33,14
+    PUSHBUTTON      "",IDC_BUTTON_REPEAT,305,207,33,14
+    PUSHBUTTON      "",IDC_BUTTON_CLOSE_BET,352,14,24,14
+END
+
+IDD_DIALOG_MES DIALOGEX 0, 0, 224, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,87,66,50,14
+    PUSHBUTTON      "",IDC_BUTTON_CLOSE,197,10,16,14
+END
+
+IDD_DIALOG_LOG DIALOGEX 0, 0, 126, 210
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_LOGOK,37,181,50,14
+END
+
+IDD_DIALOG_TONGJI DIALOGEX 0, 0, 172, 208
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_TJ_CLOSE,150,7,14,12
+    PUSHBUTTON      "确定",IDC_BUTTON_TJ_CLOSE_2,59,187,50,14
+END
+
+IDD_DIALOG_BET_LOG DIALOGEX 0, 0, 167, 209
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_BR_OK,110,7,50,14
+    CONTROL         "",IDC_LIST_BET_LOG,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_TABSTOP,28,29,108,140
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_BANK_STORAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 248
+        BOTTOMMARGIN, 135
+    END
+
+    IDD_DIALOG_SYSTEM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 415
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DIALOG_BET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 418
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_DIALOG_MES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 119
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DIALOG_TONGJI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_DIALOG_BET_LOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+HORSE1                  PNG                     "res\\HORSE1.png"
+HORSE3                  PNG                     "res\\HORSE3.png"
+HORSE4                  PNG                     "res\\HORSE4.png"
+HORSE5                  PNG                     "res\\HORSE5.png"
+HORSE6                  PNG                     "res\\HORSE6.png"
+HORSE2                  PNG                     "res\\HORSE2.png"
+DISTANCE_FRAME          PNG                     "res\\DISTANCE_FRAME.png"
+USER_INFO_L             PNG                     "res\\USER_INFO_L.png"
+XIAZHU_FRAME            PNG                     "res\\XIAZHU_FRAME.png"
+PEN_HEAD                PNG                     "res\\PEN_HEAD.png"
+PEN_NUM                 PNG                     "res\\PEN_NUM.png"
+PEN_TAIL                PNG                     "res\\PEN_TAIL.png"
+GAME_SCORE              PNG                     "res\\GAME_SCORE.png"
+TIPS_FREE               PNG                     "res\\TIPS_FREE.png"
+TIPS_BET_END            PNG                     "res\\TIPS_BET_END.png"
+TIPS_BET                PNG                     "res\\TIPS_BET.png"
+TIME_NUMBER             PNG                     "res\\TIME_NUMBER.png"
+TIPS_HORSE              PNG                     "res\\TIPS_HORSE.png"
+TIPS_HORSE_END          PNG                     "res\\TIPS_HORSE_END.png"
+BACK_TAIL               PNG                     "res\\BACK_TAIL.png"
+FULL_BACK               PNG                     "res\\FULL_BACK.png"
+BACK_HAND               PNG                     "res\\BACK_HAND.png"
+USER_INFO_R             PNG                     "res\\USER_INFO_R.png"
+USER_INFO_M             PNG                     "res\\USER_INFO_M.png"
+USER_INFO_SHU           PNG                     "res\\USER_INFO_SHU.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+HOS                     WAVE                    "res\\HOS.wav"
+WAV_GAME_OVER           WAVE                    "res\\GAME_OVER.wav"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

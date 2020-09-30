@@ -1,0 +1,599 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open Mesh File...",          ID_FILE_OPENMESH
+        MENUITEM "Open &PMesh File...",         ID_FILE_LOADPMESH
+        POPUP "Create Shape"
+        BEGIN
+            MENUITEM "Select &Font",                ID_SHAPE_SELECTFONT
+            MENUITEM "Create &Text",                ID_SHAPE_TEXT
+            MENUITEM SEPARATOR
+            MENUITEM "Create &Polygon",             ID_SHAPE_POLYGON
+            MENUITEM "Create &Box",                 ID_SHAPE_BOX
+            MENUITEM "Create &Cylinder",            ID_SHAPE_CYLINDER
+            MENUITEM "Create T&orus",               ID_SHAPE_TORUS
+            MENUITEM "Create Tea&pot",              ID_SHAPE_TEAPOT
+            MENUITEM "Create &SPHERE",              ID_SHAPE_SPHERE
+            MENUITEM "Create Co&ne",                ID_SHAPE_CONE
+        END
+        MENUITEM "&Save Mesh As...",            ID_FILE_SAVEMESH
+        MENUITEM "&Close Selected",             ID_FILE_CLOSEMESH
+        MENUITEM "Close &Non Selected",         ID_FILE_CLOSENONSELECTED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Wireframe \t'w'",            ID_D3D_WIREFRAME
+        MENUITEM "&Edges \t'e'",                ID_D3D_EDGEMODE
+        MENUITEM "C&reases \t'r'",              ID_D3D_CREASEMODE
+        MENUITEM "&Strips \t's'",               ID_D3D_STRIPMODE
+        MENUITEM "&Adjacency \t'a'",            ID_D3D_ADJACENCYMODE
+        MENUITEM "&Normals \t'n'",              ID_D3D_SHOWNORMALS
+        POPUP "&Texture Coords"
+        BEGIN
+            MENUITEM "Tex0",                        ID_D3D_SHOWTEX0
+            MENUITEM "Tex1",                        ID_D3D_SHOWTEX1
+            MENUITEM "Tex2",                        ID_D3D_SHOWTEX2
+            MENUITEM "Tex3",                        ID_D3D_SHOWTEX3
+            MENUITEM "Tex4",                        ID_D3D_SHOWTEX4
+            MENUITEM "Tex5",                        ID_D3D_SHOWTEX5
+            MENUITEM "Tex6",                        ID_D3D_SHOWTEX6
+            MENUITEM "Tex7",                        ID_D3D_SHOWTEX7
+        END
+        MENUITEM "Te&xtures",                   ID_OPTIONS_TEXTURE, GRAYED
+        MENUITEM "&Lighting",                   ID_D3D_LIGHTING
+        MENUITEM "&Culling",                    ID_D3D_CULL
+        MENUITEM SEPARATOR
+        MENUITEM "&Hierarchy",                   ID_OPTIONS_TREEVIEW
+        MENUITEM SEPARATOR
+    END
+    POPUP "&MeshOps"
+    BEGIN
+        POPUP "&Optimize"
+        BEGIN
+            MENUITEM "&Compact",                    ID_OPTIONS_COMPACT
+            MENUITEM "&AttributeSort",              ID_OPTIONS_ATTRSORT
+            MENUITEM "&Strip Reorder",              ID_OPTIONS_STRIPREORDER
+            MENUITEM "&Vertex Cache Reorder",       ID_OPTIONS_VERTEXCACHE
+            MENUITEM SEPARATOR
+            MENUITEM "&Simulate Cache Sizes",       ID_OPTIMIZE_SIMULATE
+        END
+        MENUITEM "&Weld Vertices",              ID_OPTIONS_WELDVERTICES
+        MENUITEM "Compute &Normals",            ID_MESHOPS_COMPUTENORMALS
+        MENUITEM "Valida&te Mesh",              ID_MESHOPS_VALIDATEMESH
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset Matrices",             ID_OPTIONS_RESETMATRICES
+        MENUITEM "Mesh &Properties",            ID_OPTIONS_PROPERTIES
+        POPUP "Skinning Method"
+        BEGIN
+            MENUITEM "&D3D Non-Indexed Skinning",   ID_D3D_NONINDEXED
+            MENUITEM "D3D &Indexed Skinning",       ID_D3D_INDEXED
+            MENUITEM "&Use Software Skinning",      ID_D3D_SOFTWARESKIN
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Face Selection",             ID_OPTIONS_FACESELECTION
+        MENUITEM "&Vertex Selection",           ID_OPTIONS_VERTEXSELECTION
+    END
+    POPUP "Animation"
+    BEGIN
+        MENUITEM "&Play Animation",             ID_VIEW_PLAYANIM
+        MENUITEM "Pau&se Animation",            ID_VIEW_PAUSEANIM
+        MENUITEM "N&ormal Speed",               ID_VIEW_PLAYBACKSPEED
+        MENUITEM SEPARATOR
+        MENUITEM "&Add Animation",              ID_ANIMATION_LOAD
+        POPUP "Animations"
+        BEGIN
+            MENUITEM "Filler",                      ID_ANIMATION_1
+        END
+    END
+    POPUP "&PMeshes"
+    BEGIN
+        MENUITEM "&Convert Selected To &PM",    ID_SIMPLIFY_GENERATEPM
+        MENUITEM "&Snapshot To Mesh",           ID_SIMPLIFY_SNAPSHOT
+        MENUITEM SEPARATOR
+        MENUITEM "Set number of &Vertices",     ID_SIMPLIFY_SIMPLIFY
+        MENUITEM "Set number of &Faces",        ID_SIMPLIFY_SIMPLIFYFACES
+        POPUP "&Trim"
+        BEGIN
+            MENUITEM "Set Current LOD as soft MIN LOD", 
+                                                    ID_SIMPLIFY_SETSOFTMIN
+            MENUITEM "Reset soft MIN LOD",          ID_SIMPLIFY_RESETSOFTMIN
+            MENUITEM "Set Current LOD as soft MAX LOD", 
+                                                    ID_SIMPLIFY_SETSOFTMAX
+            MENUITEM "Reset soft MAX LOD",          ID_SIMPLIFY_RESETSOFTMAX
+            MENUITEM "Preform Trim to soft limits", ID_SIMPLIFY_TRIM
+        END
+    END
+    POPUP "&NPatches"
+    BEGIN
+        MENUITEM "&N-Patch Selected",           ID_NPATCHES_NPATCH
+        MENUITEM "&Snapshot To Mesh",           ID_NPATCHES_SNAPSHOT
+        MENUITEM "Show NPatch &Edges \t'q'",    ID_NPATCHES_EDGEMODE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+APPACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_RETURN,      ID_FULLSCREEN,          VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SIMPLIFY DIALOG DISCARDABLE  0, 0, 212, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simplify"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_VERTEXCOUNT,91,14,52,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,155,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,24,50,14
+    LTEXT           "New number of vertices:",IDC_STATIC,7,16,83,11
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 225, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MeshView"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,182,7,36,14
+    CTEXT           "MeshView %u.%u.%u.%u",IDC_VERSION,63,20,99,9
+    CTEXT           "Copyright Microsoft Corporation",IDC_STATIC,48,38,129,8
+END
+
+IDD_MESHPROPERTIES DIALOG DISCARDABLE  0, 0, 244, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mesh Properties"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,187,24,50,14
+    CONTROL         "XYZ",IDC_XYZ,"Button",BS_AUTOCHECKBOX | WS_DISABLED | 
+                    WS_TABSTOP,22,17,49,10
+    CONTROL         "Normal",IDC_NORMAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,31,38,10
+    CONTROL         "Diffuse Color",IDC_DIFFUSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,45,56,10
+    CONTROL         "Specular Color",IDC_SPECULAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,17,62,10
+    CONTROL         "Tex1 UV",IDC_TEX1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    103,30,44,10
+    GROUPBOX        "FVF Format",IDC_STATIC,7,7,168,55
+    CONTROL         "32 Bit Indices",IDC_32BITINDEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,66,59,10
+END
+
+IDD_SIMPLIFYFACES DIALOG DISCARDABLE  0, 0, 204, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simplify"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_VERTEXCOUNT,85,14,52,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,147,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,24,50,14
+    LTEXT           "New number of faces:",IDC_STATIC,7,16,73,11
+END
+
+IDD_CREATETEXT DIALOG DISCARDABLE  0, 0, 312, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Text"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_TEXT,36,14,206,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXTRUSION,51,38,53,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEVIATION,169,38,53,14,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,255,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,255,24,50,14
+    LTEXT           "Text:",IDC_STATIC,13,16,20,9
+    LTEXT           "Extrusion:",IDC_STATIC,13,41,35,9
+    LTEXT           "Deviation:",IDC_STATIC,131,40,35,9
+END
+
+IDD_WELDVERTICES DIALOG DISCARDABLE  0, 0, 210, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Weld Vertices"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Remove Back To Back Triangles",IDC_REMOVEBACKTOBACK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,7,121,10
+    CONTROL         "Regenerate Adjacency",IDC_REGENERATEADJACENCY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,19,89,10
+    LTEXT           "Normals:",IDC_STATIC,16,81,28,8
+    EDITTEXT        IDC_NORMALSEPSILON,61,78,53,14,ES_AUTOHSCROLL
+    LTEXT           "SkinWeights:",IDC_STATIC,16,100,43,8
+    EDITTEXT        IDC_SKINWEIGHTSEPSILON,61,97,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Epsilons",IDC_STATIC,7,69,114,66
+    EDITTEXT        IDC_TEXTUREEPSILON,61,116,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "OK",IDOK,153,7,50,14
+    DEFPUSHBUTTON   "Apply",ID_APPLY,153,24,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,41,50,14
+    LTEXT           "Textures:",IDC_STATIC,16,119,30,8
+    LTEXT           "Weld Results:",IDC_STATIC,7,139,45,8
+    EDITTEXT        IDC_WELDCONSOLE,7,150,196,42,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Partial Weld Vertices",IDC_PARTIALWELD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,31,81,10
+    CONTROL         "Do Not Remove Vertices",IDC_DONOTREMOVEVERTICES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,43,95,10
+    CONTROL         "Weld All Vertices",IDC_WELDALLVERTICES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,55,69,10
+END
+
+IDD_TESTSIMPLIFY DIALOG DISCARDABLE  0, 0, 211, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Test Simplify"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_TESTINTERVAL,91,14,52,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,154,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,24,50,14
+    LTEXT           "Simplification Interval:",IDC_STATIC,7,16,83,11
+    LTEXT           "Specify the interval to incrementally simplify the mesh at.  Used to both test validity of simplification mesh at each stopping point and to isolate when incorrect edge collapses occur.  This is REALLY REALLY slow if the interval is small.",
+                    IDC_STATIC,7,46,197,37
+END
+
+IDD_INFO DIALOG DISCARDABLE  0, 0, 394, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,172,149,50,14
+    LTEXT           "Operation Results:",-1,7,7,59,8
+    EDITTEXT        IDC_CONSOLE,7,18,380,125,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_FACEINFO DIALOG DISCARDABLE  0, 0, 394, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Face Information"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_SELECTEDFACE,67,6,53,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_CONSOLE,7,25,380,160,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "OK",IDOK,142,191,50,14
+    DEFPUSHBUTTON   "Get Face Info",IDC_GETFACEINFO,202,191,50,14
+    LTEXT           "Selected Face:",IDC_STATIC,7,9,51,8
+END
+
+IDD_VERTEXINFO DIALOG DISCARDABLE  0, 0, 394, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Face Information"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_SELECTEDVERTEX,72,6,53,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_CONSOLE,7,25,380,160,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "OK",IDOK,142,191,50,14
+    DEFPUSHBUTTON   "Get Vertex Info",IDC_GETVERTEXINFO,202,191,56,14
+    LTEXT           "Selected Vertex:",IDC_STATIC,7,9,57,8
+END
+
+IDD_SIMPLIFYINPUTS DIALOG DISCARDABLE  0, 0, 210, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simplify Error Metric Weights"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Position:",IDC_STATIC,10,11,28,8
+    EDITTEXT        IDC_POSITIONWEIGHT,55,8,53,14,ES_AUTOHSCROLL
+    LTEXT           "Boundary:",IDC_STATIC,10,30,33,8
+    EDITTEXT        IDC_BOUNDARYWEIGHT,55,27,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Normal:",IDC_STATIC,10,49,25,8
+    EDITTEXT        IDC_NORMALWEIGHT,55,46,53,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Diffuse:",IDC_STATIC,9,68,25,8
+    EDITTEXT        IDC_DIFFUSEWEIGHT,55,65,53,14,ES_AUTOHSCROLL
+    LTEXT           "Specular:",IDC_STATIC,9,87,31,8
+    EDITTEXT        IDC_SPECULARWEIGHT,55,84,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Textures:",IDC_STATIC,9,106,30,8
+    EDITTEXT        IDC_TEXTUREWEIGHT,55,103,53,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "OK",IDOK,153,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,25,50,14
+END
+
+IDD_SPLITMESH DIALOG DISCARDABLE  0, 0, 213, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SplitMesh"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_SPLITMESH_SPLITSIZE,99,15,51,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,156,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,24,50,14
+    LTEXT           "Split mesh into piecs of size:",IDC_STATIC,7,16,91,11
+    LTEXT           "Faces:",IDC_STATIC,15,52,25,8
+    LTEXT           "Vertices:",IDC_STATIC,15,67,33,8
+    GROUPBOX        "Info on Selected Mesh:",IDC_STATIC,7,40,128,42
+    RTEXT           "Static",IDC_SPLITMESH_FACES,58,52,69,10,SS_SUNKEN
+    RTEXT           "Static",IDC_SPLITMESH_VERTICES,58,67,69,10,SS_SUNKEN
+END
+
+IDD_LOADMESHEX DIALOG DISCARDABLE  0, 0, 166, 14
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Flatten Frame Hiearchy",IDC_FLATTENHIERARCHY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,2,89,10
+END
+
+IDD_SAVEMESHEX DIALOG DISCARDABLE  0, 0, 254, 49
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Save Selected Only",IDC_SAVESELECTEDONLY,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,4,79,10
+    CONTROL         "Save Hierarchy",IDC_SAVEHIERARCHY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,17,65,10
+    CONTROL         "Save Animation",IDC_SAVEANIMATION,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,30,65,10
+    GROUPBOX        "X File Format",IDC_STATIC,117,2,130,42
+    CONTROL         "Text",IDC_TEXT,"Button",BS_AUTORADIOBUTTON,129,10,30,10
+    CONTROL         "Binary",IDC_BINARY,"Button",BS_AUTORADIOBUTTON,129,21,
+                    35,10
+    CONTROL         "Binary Compressed",IDC_BINARYCOMPRESSED,"Button",
+                    BS_AUTORADIOBUTTON,129,31,76,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SIMPLIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_MESHPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_SIMPLIFYFACES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_CREATETEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_WELDVERTICES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_TESTSIMPLIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_FACEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_VERTEXINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_SIMPLIFYINPUTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_SPLITMESH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_LOADMESHEX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 164
+    END
+
+    IDD_SAVEMESHEX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 252
+        BOTTOMMARGIN, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#include "..\\..\\inc\\verinfo.h"
+
+#define VERSIONTYPE                     VFT_APP
+#define VERSIONSUBTYPE                  VFT2_UNKNOWN
+#define VERSIONDESCRIPTION	      	"MeshView\0"
+#define VERSIONNAME                     "MeshView.exe\0"
+
+#include "verinfo.ver"
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINICON            ICON    DISCARDABLE     "directx.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER             CURSOR  DISCARDABLE     "arrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+IDD_ADJACENCY           RCDATA  DISCARDABLE     "adjacency.fx"
+IDD_FACESELECT          RCDATA  DISCARDABLE     "faceselect.fx"
+IDD_VERTSELECT          RCDATA  DISCARDABLE     "vertselect.fx"
+IDD_SHOWNORMALS         RCDATA  DISCARDABLE     "shownormals.fx"
+IDD_TEXTURE1            RCDATA  DISCARDABLE     "texture1.fx"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

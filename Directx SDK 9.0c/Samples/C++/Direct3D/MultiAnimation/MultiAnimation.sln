@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiAnimation", "MultiAnimation.vcproj", "{FD1377CF-4FE1-4741-842F-DBCF852C9CBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FD1377CF-4FE1-4741-842F-DBCF852C9CBD}.Debug.ActiveCfg = Debug|Win32
+		{FD1377CF-4FE1-4741-842F-DBCF852C9CBD}.Debug.Build.0 = Debug|Win32
+		{FD1377CF-4FE1-4741-842F-DBCF852C9CBD}.Release.ActiveCfg = Release|Win32
+		{FD1377CF-4FE1-4741-842F-DBCF852C9CBD}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+ALT_PROJECT_TARGET=Samples
+TARGETNAME=StateManager
+
+MAJORCOMP=
+MINORCOMP=
+
+
+USE_STL=1
+USE_NATIVE_EH=1
+MSC_WARNING_LEVEL=/W3
+
+
+TARGETPATH=obj
+TARGETTYPE=PROGRAM
+TARGETLIBS=$(BASEDIR)\Public\sdk\lib\*\d3dxof.lib \
+           $(BASEDIR)\Public\sdk\lib\*\shell32.lib \
+           $(BASEDIR)\Public\sdk\lib\*\comctl32.lib \
+           $(BASEDIR)\Public\sdk\lib\*\uuid.lib \
+           $(BASEDIR)\Public\sdk\lib\*\dxguid.lib \
+           $(BASEDIR)\Public\sdk\lib\*\dxerr9.lib \
+           $(BASEDIR)\Public\sdk\lib\*\winmm.lib \
+!if !$(FREEBUILD)
+           $(BASEDIR)\Public\sdk\lib\*\d3dx9dt.lib \
+!else
+           $(BASEDIR)\Public\sdk\lib\*\d3dx9.lib \
+!endif
+           ..\..\common\obj$(BUILD_ALT_DIR)\*\dxut.lib 
+
+INCLUDES=..\..\common; \
+         $(SDK_INC_PATH);
+
+SOURCES=StateManagerApp.cpp \
+        EffectStateManager.cpp \
+        LoadSceneFromX.cpp \
+        Renderables.cpp \
+        StateManager.rc
+
+C_DEFINES= $(C_DEFINES) -DUNICODE -D_UNICODE -DWIN32
+
+!if "$(NTDEBUG)"!="" && "$(NTDEBUG)"!="ntsdnodbg"
+C_DEFINES = $(C_DEFINES) -DDEBUG -DPROFILE
+!endif
+
+UMENTRY=winmain
+UMTYPE=windows
+UMAPPL=
+UMLIBS=
+CHICAGO_PRODUCT=1 
+386_STDCALL=0 

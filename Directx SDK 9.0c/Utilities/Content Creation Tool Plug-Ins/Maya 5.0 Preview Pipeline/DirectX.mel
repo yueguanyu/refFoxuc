@@ -1,0 +1,126 @@
+
+global string $g_dxMenu;
+global string $g_dxPreviewToggle;
+global string $g_dxSkinToggle;
+
+{
+	DirectX_BuildMenu();
+}
+
+
+
+global proc int DirectX_GetPreviewState()
+{
+	global string $g_dxPreviewToggle;
+
+	int $result= `menuItem -q -checkBox  $g_dxPreviewToggle`;
+
+	return $result;
+}
+
+
+global proc int DirectX_GetSkinState()
+{
+	global string $g_dxSkinToggle;
+
+	int $result= 0;//`menuItem -q -checkBox  $g_dxSkinToggle`;
+
+	return $result;
+}
+
+global proc DirectX_BuildMenu()
+{
+	global string $gMainWindow;
+	global string $g_dxMenu;
+	global string $g_dxPreviewToggle;
+	global string $g_dxSkinToggle;
+	global string $g_dxAnimationToggle;
+
+	// If menu exists or if main window doesn't exist, just return.
+	if(`menu -q -exists $g_dxMenu` 
+	  || !(`window -q -exists $gMainWindow`)) 
+		return;
+
+	$g_dxMenu= `menu -parent $gMainWindow -tearOff true -aob true 
+					-label "DirectX"`;
+
+	setParent -m $g_dxMenu;
+
+	$g_dxPreviewToggle= `menuItem -l "Realtime Previewing"
+		-annotation "Realtime Previewing of scene in Direct3D viewers."
+		-cb 1
+		-c ("DXCCPreviewToggle `menuItem -q -cb $g_dxPreviewToggle`")`;
+
+	//$g_dxSkinToggle= `menuItem -l "Capture Skin"
+	//	-annotation "Capture Pre-skinned mesh + skinning information."
+	//	-cb 0
+	//	-c ("DXCCRebuildScene")`;
+
+	menuItem -d true;
+
+	menuItem -l "Rebuild Scene"
+		-annotation "Rebuild scene data for realtime viewers and export"
+		-c "DXCCRebuildScene"
+		dxRebuildSceneItem;
+
+	menuItem -l "Rebuild Selected"
+		-aob true
+		-annotation "Rebuild selected data for realtime viewers and export"
+		-c ("DXCCRebuildSelected")
+		dxRebuildSelectedItem;
+
+	menuItem -l "Gather Animation"
+		-annotation "Gather Animation"
+		-c ("DXCCGatherAnimation");
+
+	menuItem -d true;
+	
+	menuItem -l "Export Scene"
+		-annotation "Export the scene to an X-File."
+		-c ("DXCCExportScene")
+		dxExportSceneItem;
+
+	//menuItem -l "Export Selected"
+	//	-aob true
+	//	-annotation "Export the selected items and dependencies to an X-File."
+	//	-c ("DXCCExportSelected")
+	//	dxExportSelectedItem;
+
+	menuItem -d true;
+
+	menuItem  -l "Viewers..." 
+                -sm 1 
+                -to 1
+			-annotation "Realtime Viewers"
+			dxViewerItem;
+
+	menuItem  -l "Floating" 
+			-annotation "Floating Viewers"
+			-c "DXCCFloatingView"
+			dxFloatingViewerItem;
+
+	menuItem  -l "Top" 
+			-annotation "TopViewers"
+			-c "DXCCTopView"
+			dxTopViewerItem;
+
+	menuItem  -l "Side" 
+			-annotation "SideViewers"
+			-c "DXCCSideView"
+			dxSideViewerItem;
+
+	menuItem  -l "Front" 
+			-annotation "FrontViewers"
+			-c "DXCCFrontView"
+			dxFrontViewerItem;
+
+	menuItem  -l "Perspective" 
+			-annotation "PerspectiveViewers"
+			-c "DXCCPerspectiveView"
+			dxPerspectiveViewerItem;
+
+	menuItem -d true;
+
+}
+
+

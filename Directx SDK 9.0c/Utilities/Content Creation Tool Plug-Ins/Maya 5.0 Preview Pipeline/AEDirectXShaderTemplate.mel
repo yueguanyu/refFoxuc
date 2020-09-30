@@ -1,0 +1,84 @@
+global string $DirectXShaderName = "";
+
+
+proc string plugNode( string $plug )
+{
+    string $buffer[];
+    tokenize($plug, ".", $buffer);
+    return $buffer[0];
+}
+
+global proc FireUpEffectDialog( string $nodeName )
+{
+	setAttr ($nodeName+".Command") -type "string" "open";
+}
+
+
+global proc AEDirectXNew( string $messagePlug )
+{
+ 	global string $DirectXShaderName;
+	string $shaderNode = plugNode($messagePlug);
+	
+	string $parent = `setParent -q`;
+
+ 	setUITemplate -pushTemplate attributeEditorTemplate;
+
+	if ($DirectXShaderName == "" 
+		|| !`iconTextButton -exists $DirectXShaderName`) 
+	{
+		$DirectXShaderName = `iconTextButton
+			-image1 "render_DirectXShader.bmp" 
+			-label "Select and Customize FX-File"
+			-style "iconAndTextVertical"
+			-height 64 -width 192`;	 
+
+	}
+
+	setUITemplate -popTemplate;
+
+
+    	AEDirectXReplace($messagePlug);
+}
+
+global proc AEDirectXReplace( string $messagePlug )
+{
+	global string $DirectXShaderName;
+	string $shaderNode = plugNode($messagePlug);
+
+	iconTextButton -e 
+		-command ("FireUpEffectDialog "+$shaderNode)
+		$DirectXShaderName;	
+	
+}
+
+global proc AEDirectXShaderTemplate ( string $nodeName )
+{
+	AEswatchDisplay $nodeName;
+	
+	//layout 
+	editorTemplate -beginScrollLayout;	
+
+		editorTemplate -beginLayout "Direct3D" -collapse 0;
+			editorTemplate -callCustom AEDirectXNew AEDirectXReplace $nodeName;
+			editorTemplate -addControl "color";
+			editorTemplate -addControl "File";
+		editorTemplate -endLayout;
+
+
+		//editorTemplate -beginLayout "Command Line" -collapse 0;
+		//	editorTemplate -addControl "Command";
+		//editorTemplate -endLayout;
+	
+		
+		editorTemplate -addExtraControls;
+	
+	editorTemplate -endScrollLayout;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+"%DXSDK_DIR%\utilities\fxc" /Tfx_2_0 /Fo%1 %2

@@ -1,0 +1,120 @@
+****************************************************
+ * web.config配置说明		
+ * 版本：休闲棋牌平台
+ * 阅读对象：运维人员			
+*******************************************************/
+
+/********************前台配置*********************************/
+================================================================================
+1. 修改web.config数据库配置。
+
+<add key="DBNativeWeb" value="Data Source=数据库地址; Initial Catalog=数据库名; User ID=用户名; Password=用户密码; Pooling=true"/>
+例如：
+<add key="DBNativeWeb" value="Data Source=.; Initial Catalog=XXNativeWebDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBAccounts" value="Data Source=.; Initial Catalog=XXAccountsDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBPlatform" value="Data Source=.; Initial Catalog=XXPlatformDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBTreasure" value="Data Source=.; Initial Catalog=XXTreasureDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBRecord" value="Data Source=.; Initial Catalog=XXRecordDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBGameMatch" value="Data Source=.; Initial Catalog=XXGameMatchDB6; User ID=sa; Password=sa; Pooling=true"/>
+
+=================================================================================
+2. 修改web.config充值接口配置，请到相应的供应商申请充值接口。
+
+<add key="merchantId" value="1001181333401"/>		【快钱人民币充值商户号，修改value为对应的值】	
+<add key="keyValue" value="AZ5MJGJJ36J9Q9GK"/>		【快钱人民币充值密钥，修改value为对应的值】
+<add key="merchantIdMobile" value="1000300079902"/>	【快钱手机卡充值商户号，修改value为对应的值】
+<add key="keyValueMobile" value="IQUJRFHCMYJGYFWZ"/>	【快钱手机卡充值密钥，修改value为对应的值】
+<add key="merchantIdGame" value="107870"/>		【快钱游戏卡充值商户号，修改value为对应的值】
+<add key="keyValueGame" value="YYK9NRT6FKSLSL02"/>	【快钱游戏卡充值密钥，修改value为对应的值】		
+<add key="spId" value="11314"/>				【声讯V币充值商户号，修改value为对应的值】
+<add key="spKeyValue" value="410069322661629573"/>	【声讯V币充值密钥，修改value为对应的值】
+
+===================================================================================
+3. 修改web.config网站头部相关标签配置。
+
+<add key="keywords" value="网狐休闲棋牌演示平台。"/>			【页面关键字，页面内容的关键词简述，详情http://baike.baidu.com/view/706499.htm】
+<add key="description" value="网狐休闲棋牌演示平台。"/>	【页面描述，页面内容的简介，详情http://baike.baidu.com/view/1195113.htm】
+<add key="title" value="网狐休闲棋牌演示平台"/>					【页面标题，他显示在浏览器上及任务栏上】
+
+====================================================================================
+4. web.config密保卡模版配置，该配置项可以不修改，修改方法：每个值可以改成1至1000任意数字，修改后也修改后台的web.config文件，前后台必须保持一直。
+
+<add key="A1" value="9"/>
+<add key="A2" value="15"/>
+<add key="A3" value="24"/>
+<add key="A4" value="268"/>
+<add key="B1" value="1"/>
+<add key="B2" value="88"/>
+<add key="B3" value="25"/>
+<add key="B4" value="76"/>
+<add key="C1" value="185"/>
+<add key="C2" value="28"/>
+<add key="C3" value="65"/>
+<add key="C4" value="205"/>
+<add key="D1" value="72"/>
+<add key="D2" value="39"/>
+<add key="D3" value="11"/>
+<add key="D4" value="31"/>
+<add key="E1" value="52"/>
+<add key="E2" value="220"/>
+<add key="E3" value="7"/>
+<add key="E4" value="105"/>
+<add key="F1" value="99"/>
+<add key="F2" value="117"/>
+<add key="F3" value="93"/>
+<add key="F4" value="18"/>
+
+=======================================================================================
+5. 修改web.config 缓存前缀，该值做为网站的session/cookie的前缀，可不改，如果要修改的请改成长度不大于10的字母串。
+
+<add key="AppPrefix" value="XX6603"/> 
+
+
+/********************后台配置*********************************/
+========================================================================================
+1. 修改web.config数据库配置，配置跟前台配置一样
+
+<add key="DBNativeWeb" value="Data Source=数据库地址; Initial Catalog=数据库名; User ID=用户名; Password=用户密码; Pooling=true"/>
+例如：
+<add key="DBNativeWeb" value="Data Source=.; Initial Catalog=XXNativeWebDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBAccounts" value="Data Source=.; Initial Catalog=XXAccountsDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBPlatform" value="Data Source=.; Initial Catalog=XXPlatformDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBTreasure" value="Data Source=.; Initial Catalog=XXTreasureDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBRecord" value="Data Source=.; Initial Catalog=XXRecordDB6; User ID=sa; Password=sa; Pooling=true"/>
+<add key="DBGameMatch" value="Data Source=.; Initial Catalog=XXGameMatchDB6; User ID=sa; Password=sa; Pooling=true"/>
+
+========================================================================================
+2. 修改web.config 缓存前缀，该值做为网站的session/cookie的前缀，可不改，如果要修改的请改成长度不大于10的任意字母串，可跟前台的值不同。
+
+<add key="AppPrefix" value="XX"/>
+
+
+========================================================================================
+3. web.config密保卡模版配置，该配置项可以不修改吗，修改方法：每个值可以随意改成1至1000任意数字，修改后也必须修改前台的web.config文件，跟前台配置必须保持一直。
+
+<add key="A1" value="9"/>
+<add key="A2" value="15"/>
+<add key="A3" value="24"/>
+<add key="A4" value="268"/>
+<add key="B1" value="1"/>
+<add key="B2" value="88"/>
+<add key="B3" value="25"/>
+<add key="B4" value="76"/>
+<add key="C1" value="185"/>
+<add key="C2" value="28"/>
+<add key="C3" value="65"/>
+<add key="C4" value="205"/>
+<add key="D1" value="72"/>
+<add key="D2" value="39"/>
+<add key="D3" value="11"/>
+<add key="D4" value="31"/>
+<add key="E1" value="52"/>
+<add key="E2" value="220"/>
+<add key="E3" value="7"/>
+<add key="E4" value="105"/>
+<add key="F1" value="99"/>
+<add key="F2" value="117"/>
+<add key="F3" value="93"/>
+<add key="F4" value="18"/>
+
+

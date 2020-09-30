@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ClientControl.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ClientControl.dll"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ClientControl.dll"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CLIENT_CONTROL_EX DIALOGEX 0, 0, 194, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "背景一  ",IDC_RADIO_LT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,21,43,44,10
+    CONTROL         "背景二   ",IDC_RADIO_LC,"Button",BS_AUTORADIOBUTTON,20,
+                    60,46,10
+    CONTROL         "背景三    ",IDC_RADIO_LB,"Button",BS_AUTORADIOBUTTON,20,
+                    78,48,10
+    CONTROL         "背景四 ",IDC_RADIO_CC,"Button",BS_AUTORADIOBUTTON,74,60,
+                    42,10
+    CONTROL         "背景五    ",IDC_RADIO_CB,"Button",BS_AUTORADIOBUTTON,74,
+                    78,48,10
+    CONTROL         "背景六  ",IDC_RADIO_RT,"Button",BS_AUTORADIOBUTTON,130,
+                    43,44,10
+    CONTROL         "背景七   ",IDC_RADIO_RC,"Button",BS_AUTORADIOBUTTON,130,
+                    61,46,10
+    CONTROL         "背景八   ",IDC_RADIO_RB,"Button",BS_AUTORADIOBUTTON,130,
+                    78,46,10
+    LTEXT           "发声类型",IDC_STATIC_TIMES,20,14,42,8
+    COMBOBOX        IDC_COMBO_TIMES,67,12,48,71,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,15,36,159,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,18,104,156,1
+    LTEXT           "       ",IDC_STATIC_AREA,18,28,55,8
+    LTEXT           "           ",IDC_STATIC_NOTIC,19,94,52,8
+    PUSHBUTTON      "确定",IDC_BUTTON_OK,103,125,36,12
+    PUSHBUTTON      "取消",IDC_BUTTON_CANCEL,150,125,36,12
+    LTEXT           "静态",IDC_STATIC_TEXT,18,107,156,8
+    PUSHBUTTON      "确定",IDC_BUTTON_RESET,7,125,36,12
+    PUSHBUTTON      "确定",IDC_BUTTON_SYN,55,125,36,12
+    GROUPBOX        "库存相关",IDC_STATIC,7,146,184,51
+    LTEXT           "库  存：",IDC_STATIC,15,159,30,8
+    LTEXT           "衰减值：",IDC_STATIC,15,174,32,8
+    EDITTEXT        IDC_EDIT_STORAGE,51,157,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEDUCT,51,172,77,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "更新",IDABORT,138,170,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CLIENT_CONTROL_EX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ClientControl.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,34 @@
+找到以下路径，把里面的图片换成和你的信息一致的就OK
+game.suibianlu.com
+
+
+大厅需要替换的图片
+
+	正式版\系统模块\客户端组件\游戏广场\Res\GamePlaza.ico
+
+	正式版\系统模块\客户端组件\游戏广场\Res\DLG_STATUS\STATUS_IMAGE.png
+
+	正式版\系统模块\客户端组件\游戏广场\Res\PLAZA_LOGON\IMAGE_REGISTER.bmp
+
+	正式版\系统模块\客户端组件\游戏广场\Res\PLAZA_LOGON\LOGON_TITILE.png
+
+
+
+网站需要替换的图片
+
+	GameFront\ads\Images\ClosePlaza.bmp
+	
+	GameFront\ads\Images\LogonLogo.bmp
+
+	GameFront\images\down.png
+
+	GameFront\images\gameBanner.jpg	
+	
+	GameFront\images\introduction_pic.gif
+
+	GameFront\images\logo.gif
+
+	GameFront\images\logo_0609.gif
+
+	
+

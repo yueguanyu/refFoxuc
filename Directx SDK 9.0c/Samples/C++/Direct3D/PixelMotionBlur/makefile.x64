@@ -1,0 +1,302 @@
+# Microsoft Developer Studio Generated NMAKE File, Based on PixelMotionBlur.dsp
+!IF "$(CFG)" == ""
+CFG=PixelMotionBlur - Win64 Debug
+!MESSAGE No configuration specified. Defaulting to PixelMotionBlur - Win64 Debug.
+!ENDIF 
+
+!IF "$(CFG)" != "PixelMotionBlur - Win64 Debug" && "$(CFG)" != "PixelMotionBlur - Win64 Release"
+!MESSAGE Invalid configuration "$(CFG)" specified.
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "makefile.X64" CFG="PixelMotionBlur - Win64 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "PixelMotionBlur - Win64 Debug" (based on "Win64 (X64) Application")
+!MESSAGE "PixelMotionBlur - Win64 Release" (based on "Win64 (X64) Application")
+!MESSAGE 
+!ERROR An invalid configuration is specified.
+!ENDIF 
+
+!IF "$(OS)" == "Windows_NT"
+NULL=
+!ELSE 
+NULL=nul
+!ENDIF 
+
+!IF  "$(CFG)" == "PixelMotionBlur - Win64 Debug"
+
+OUTDIR=.\Debug
+INTDIR=.\Debug
+# Begin Custom Macros
+OutDir=.\Debug
+# End Custom Macros
+
+ALL : "$(OUTDIR)\PixelMotionBlur.exe"
+
+
+CLEAN :
+	-@erase "$(INTDIR)\dxstdafx.obj"
+	-@erase "$(INTDIR)\dxut.obj"
+	-@erase "$(INTDIR)\dxutenum.obj"
+	-@erase "$(INTDIR)\dxutgui.obj"
+	-@erase "$(INTDIR)\dxutmisc.obj"
+	-@erase "$(INTDIR)\dxutsettingsdlg.obj"
+	-@erase "$(INTDIR)\PixelMotionBlur.obj"
+	-@erase "$(INTDIR)\PixelMotionBlur.pch"
+	-@erase "$(INTDIR)\PixelMotionBlur.res"
+	-@erase "$(INTDIR)\vc60.idb"
+	-@erase "$(INTDIR)\vc60.pdb"
+	-@erase "$(OUTDIR)\PixelMotionBlur.exe"
+	-@erase "$(OUTDIR)\PixelMotionBlur.ilk"
+	-@erase "$(OUTDIR)\PixelMotionBlur.pdb"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+
+CPP=cl.exe
+CPP_PROJ=/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\Common" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PixelMotionBlur.pch" /Yu"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+MTL=midl.exe
+MTL_PROJ=/nologo /win64 
+RSC=rc.exe
+RSC_PROJ=/l 0x409 /fo"$(INTDIR)\PixelMotionBlur.res" 
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\PixelMotionBlur.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxerr9.lib dxguid.lib d3dx9dt.lib d3d9.lib winmm.lib comctl32.lib /nologo /subsystem:windows /incremental:yes /pdb:"$(OUTDIR)\PixelMotionBlur.pdb" /debug /machine:X64 /out:"$(OUTDIR)\PixelMotionBlur.exe" /pdbtype:sept /IGNORE:4089 
+LINK32_OBJS= \
+	"$(INTDIR)\dxstdafx.obj" \
+	"$(INTDIR)\dxut.obj" \
+	"$(INTDIR)\dxutenum.obj" \
+	"$(INTDIR)\dxutmisc.obj" \
+	"$(INTDIR)\dxutsettingsdlg.obj" \
+	"$(INTDIR)\dxutgui.obj" \
+	"$(INTDIR)\PixelMotionBlur.obj" \
+	"$(INTDIR)\PixelMotionBlur.res"
+
+"$(OUTDIR)\PixelMotionBlur.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ELSEIF  "$(CFG)" == "PixelMotionBlur - Win64 Release"
+
+OUTDIR=.\Release
+INTDIR=.\Release
+# Begin Custom Macros
+OutDir=.\Release
+# End Custom Macros
+
+ALL : "$(OUTDIR)\PixelMotionBlur.exe"
+
+
+CLEAN :
+	-@erase "$(INTDIR)\dxstdafx.obj"
+	-@erase "$(INTDIR)\dxut.obj"
+	-@erase "$(INTDIR)\dxutenum.obj"
+	-@erase "$(INTDIR)\dxutgui.obj"
+	-@erase "$(INTDIR)\dxutmisc.obj"
+	-@erase "$(INTDIR)\dxutsettingsdlg.obj"
+	-@erase "$(INTDIR)\PixelMotionBlur.obj"
+	-@erase "$(INTDIR)\PixelMotionBlur.pch"
+	-@erase "$(INTDIR)\PixelMotionBlur.res"
+	-@erase "$(INTDIR)\vc60.pdb"
+	-@erase "$(OUTDIR)\PixelMotionBlur.exe"
+	-@erase "$(OUTDIR)\PixelMotionBlur.pdb"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+
+CPP=cl.exe
+CPP_PROJ=/nologo /ML /W3 /GX /Zi /O2 /I "..\..\Common" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PixelMotionBlur.pch" /Yu"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+MTL=midl.exe
+MTL_PROJ=/nologo /win64 
+RSC=rc.exe
+RSC_PROJ=/l 0x409 /fo"$(INTDIR)\PixelMotionBlur.res" 
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\PixelMotionBlur.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxerr9.lib dxguid.lib d3dx9.lib d3d9.lib winmm.lib comctl32.lib /nologo /subsystem:windows /incremental:no /pdb:"$(OUTDIR)\PixelMotionBlur.pdb" /debug /machine:X64 /out:"$(OUTDIR)\PixelMotionBlur.exe" /pdbtype:sept /opt:ref /opt:icf /IGNORE:4089 
+LINK32_OBJS= \
+	"$(INTDIR)\dxstdafx.obj" \
+	"$(INTDIR)\dxut.obj" \
+	"$(INTDIR)\dxutenum.obj" \
+	"$(INTDIR)\dxutmisc.obj" \
+	"$(INTDIR)\dxutsettingsdlg.obj" \
+	"$(INTDIR)\dxutgui.obj" \
+	"$(INTDIR)\PixelMotionBlur.obj" \
+	"$(INTDIR)\PixelMotionBlur.res"
+
+"$(OUTDIR)\PixelMotionBlur.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ENDIF 
+
+
+!IF "$(NO_EXTERNAL_DEPS)" != "1"
+!IF EXISTS("PixelMotionBlur.dep")
+!INCLUDE "PixelMotionBlur.dep"
+!ELSE 
+!MESSAGE Warning: cannot find "PixelMotionBlur.dep"
+!ENDIF 
+!ENDIF 
+
+
+!IF "$(CFG)" == "PixelMotionBlur - Win64 Debug" || "$(CFG)" == "PixelMotionBlur - Win64 Release"
+SOURCE=PixelMotionBlur.rc
+
+"$(INTDIR)\PixelMotionBlur.res" : $(SOURCE) "$(INTDIR)"
+	$(RSC) $(RSC_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxstdafx.cpp
+
+!IF  "$(CFG)" == "PixelMotionBlur - Win64 Debug"
+
+CPP_SWITCHES=/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\Common" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PixelMotionBlur.pch" /Yc"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\"  /c 
+
+"$(INTDIR)\dxstdafx.obj"	"$(INTDIR)\PixelMotionBlur.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) @<<
+  $(CPP_SWITCHES) $(SOURCE)
+<<
+
+
+!ELSEIF  "$(CFG)" == "PixelMotionBlur - Win64 Release"
+
+CPP_SWITCHES=/nologo /ML /W3 /GX /Zi /O2 /I "..\..\Common" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PixelMotionBlur.pch" /Yc"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\"  /c 
+
+"$(INTDIR)\dxstdafx.obj"	"$(INTDIR)\PixelMotionBlur.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) @<<
+  $(CPP_SWITCHES) $(SOURCE)
+<<
+
+
+!ENDIF 
+
+SOURCE=..\..\Common\dxut.cpp
+
+"$(INTDIR)\dxut.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutenum.cpp
+
+"$(INTDIR)\dxutenum.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutgui.cpp
+
+"$(INTDIR)\dxutgui.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutmisc.cpp
+
+"$(INTDIR)\dxutmisc.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutsettingsdlg.cpp
+
+"$(INTDIR)\dxutsettingsdlg.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=PixelMotionBlur.cpp
+
+!IF  "$(CFG)" == "PixelMotionBlur - Win64 Debug"
+
+CPP_SWITCHES=/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\Common" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PixelMotionBlur.pch" /Yu"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+"$(INTDIR)\PixelMotionBlur.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) @<<
+  $(CPP_SWITCHES) $(SOURCE)
+<<
+
+
+!ELSEIF  "$(CFG)" == "PixelMotionBlur - Win64 Release"
+
+CPP_SWITCHES=/nologo /ML /W3 /GX /Zi /O2 /I "..\..\Common" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PixelMotionBlur.pch" /Yu"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+"$(INTDIR)\PixelMotionBlur.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PixelMotionBlur.pch"
+	$(CPP) @<<
+  $(CPP_SWITCHES) $(SOURCE)
+<<
+
+
+!ENDIF 
+
+
+!ENDIF 
+
+

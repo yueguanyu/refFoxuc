@@ -1,0 +1,240 @@
+<HTML>
+<HEAD>
+<TITLE>C# Scripting Direct3D Sample</TITLE>
+<STYLE TYPE="text/css">
+.h1 { font-family: tahoma; font-weight: bold; font-size: 130%; }
+.h2 { font-family: arial; font-weight: bold; vertical-align: super; }
+.h3 { font-family: arial; font-weight: bold; vertical-align: super; font-size: 90%; }
+.p { font-family: arial; font-size: 80%; }
+.fig { font-family: arial; font-weight: bold; font-size: 90%; }
+.header { padding: 3px; font-family: tahoma; font-weight: bold; color: white }
+.chart { font-family: monospace; font-size: 75%; }
+</STYLE>
+</HEAD>
+
+<BODY bgColor=#ffffff MARGINHEIGHT="2" TOPMARGIN=2 LEFTMARGIN=2 RIGHTMARGIN=2>
+
+<!-- HEADER - DO NOT MODIFY -->
+<TABLE BACKGROUND="doc/header_background.gif" WIDTH="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0>
+<TR>
+<TD ALIGN="left"><IMG SRC="doc/header_left.gif" BORDER=0></TD>
+<TD ALIGN="right"><IMG SRC="doc/header_right.gif" BORDER=0></TD>
+</TR>
+</TABLE>
+<!-- END HEADER -->
+
+<!-- MASTER TABLE - DO NOT MODIFY -->
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=20>
+<TR>
+<TD CLASS="p">
+<!-- END MASTER TABLE -->
+
+<FONT CLASS="h1">
+<!-- INSERT SAMPLE NAME -->
+C# Scripting Sample
+<!-- END SAMPLE NAME -->
+</FONT>
+<HR>
+
+<TABLE WIDTH="100%" BGCOLOR="#FFFFFF" BORDER=0 CELLPADDING=10 CELLSPACING=0>
+<TR>
+<TD CLASS="p">
+<BR CLEAR="left">
+<IMG style="MARGIN-TOP: -7px; MARGIN-LEFT: -20px" hspace=20 src="Scripting.jpg" align=left vspace=10 >
+<FONT CLASS="h2">Description</FONT><BR>
+<!-- INSERT SAMPLE DESCRIPTION -->
+The sample demonstrates one possible technique for using C# code as a 'script'
+in your unmanaged applications, and includes techniques to ensure scripts that 
+are not deemed to be 'safe' cannot be executed.  The sample includes three scripts, 
+one simple 'state-less' script, one more advanced script which maintains state
+and reacts to the environment, and a final script that is emulating a 'bad' script that 
+attempts to delete files from your hard drive.
+
+<!-- END SAMPLE DESCRIPTION -->
+<BR CLEAR="left">
+<BR CLEAR="left">
+</TD>
+</TR>
+</TABLE>
+
+<HR>
+<BR CLEAR="left">
+<FONT CLASS="h2">Path</FONT>
+<TABLE STYLE="margin-left: -4px" CELLSPACING=4 CELLPADDING=4 BORDER=0>
+<TR>
+<!-- PATH INFORMATION -->
+<TD CLASS="chart" BGCOLOR=#DDDDDD ALIGN="right"><B>Source:</B></TD>
+<TD CLASS="chart" BGCOLOR=#EEEEEE>Samples\Managed\\Direct3D\Scripting</TD>
+<!-- END PATH INFORMATION -->
+</TR>
+<TR>
+<!-- PATH INFORMATION -->
+<TD CLASS="chart" BGCOLOR=#DDDDDD ALIGN="right"><B>Executable:</B></TD>
+<TD CLASS="chart" BGCOLOR=#EEEEEE>Samples\Managed\\Direct3D\bin\Scripting.exe</TD>
+<!-- END PATH INFORMATION -->
+</TR>
+</TABLE>
+<P>
+<FONT CLASS="h2">Sample Overview</FONT><BR>
+Having a robust scripting engine in your game titles can open up new avenues for 
+development of your title.  Many different aspects of the game could be controlled by
+these 'scripts' (although given these will actually be compiled and executed, 'script' 
+is not entirely accurate).  You could have your camera scripted for a 'cut scene' inside 
+the game, game AI, or any other number of manipulations of your game environment. 
+One of the more exciting prospects would be to have user added content (for example 
+custom added units) that would use the scripts to have custom actions, and react to
+the environment appropriately.
+<p>
+This particular sample comes with three different types of scripts, each with a unique characteristic:
+<p>
+<ul>
+<li>Script #1 - A simple state-less script that makes the character move slowly
+around the scene while rotating.
+<li>Script #2 - A more advanced script that maintains state, and uses this information
+to deteremine which action to perform.  The character can bounce off walls, and the rotation 
+will change when it does so.
+<li>Bad Guy Hacker Script - A script that is designed to emulate a "Bad Guy Hacker" trying to 
+delete files from your computer.  Due to the security settings set on the scripts that are allowed
+to run, this will (of course) not be allowed.
+</ul>
+
+<P>
+<FONT CLASS="h2">How Does the Sample Work?</FONT><BR>
+This sample uses the most direct technique possible to compile the C# code into 
+scripts on the fly.  It started with the ShadowVolume C++ SDK Sample, and modified it to allow the 
+character in the scene to be controllable by C# scripts.  First, the sample was updated to be a mixed mode
+assembly by adding the <B>/CLR</B> compiler switch.  This allows you to have your managed code
+that will control the scripting engine to be embedded directly into your application.
+<P>
+You'll notice that the unmanaged code file of the sample also includes a new <b>#pragma unmanaged</B> directive
+to let the compiler know that this code will only be unmanaged code.  At startup the security policy is set (see below)
+and then while running, the user is allowed to pick one of the three scripts that ship with the SDK (or choose no scripts 
+at all).  
+<P>
+When one of the scripts is selected from the user interface, the work for compiling and loading
+the script's code happens.  An instance of the 
+<a href="http://msdn.microsoft.com/library/en-us/cpref/html/frlrfmicrosoftcsharpcsharpcodeproviderclasstopic.asp">
+<B>CSharpCodeProvider</B><A> class is created, and the raw code of the script is fed into the class to be
+compiled.  The assembly is compiled and stored in the temporary files where it is then loaded into the application.  
+Once the assembly has been loaded, the main class of the script (which all script's must implement) is loaded and 
+stored, since this will be used later to call the methods from the script.
+<BR>
+<i>Note for this sample, any compile errors from one of the scripts will be ignored and the character will
+simply behave as if there are no scripts running.</I>
+<P>
+Once a script has been compiled and loaded, a series of four potential methods will be called (depending on
+if the script implements them).  The character's rotation (on each axis) can be modified, as well as the character's
+position.  
+
+<p><BR><FONT CLASS="h2">Security Considerations</FONT><BR>
+Allowing unknown code to run within your game engine can be a scary prospect to say the least.
+What would stop a script writer from deciding to write a script that emailed all of your
+important documents to everyone in your global address book, then formatted your hard drive?  C#
+as a language is extremely powerful and could allow you to do either of these things in a fully trusted 
+environment.  
+<p>
+Luckily, managed code has something called <a href="http://msdn.microsoft.com/library/en-us/cpguide/html/cpconcodeaccesssecurity.asp">
+<B>Code Access Security</B></A>, which was designed specifically for situations such as this.  
+By default, any code running on the local machine (which most client applications will be) is 
+granted <B>Full Trust</B>, which basically means it is allowed to do anything the language is
+capable of doing (like format the hard drive).  To ensure these unsafe things aren't allowed the 
+<a href="http://msdn.microsoft.com/library/en-us/cpref/html/frlrfSystemAppDomainClassTopic.asp"><b>
+Application Domain</B></A>'s security policy is updated.  During startup, the sample calls the <B>
+Initialize()</B> method on the script engine, which contains the following code snippet:
+
+<p>
+<TABLE STYLE="MARGIN-LEFT: -4px" CELLSPACING="4" CELLPADDING="10" BORDER="0">
+<TR>
+<TD CLASS="chart" BGCOLOR="#eeeeee">
+<PRE>
+<FONT COLOR="green">// Create a new, empty permission set so we don't mistakenly grant some permission we don't want</FONT>
+PermissionSet* pPermissions = new PermissionSet(PermissionState::None);
+
+<FONT COLOR="green">// Set the permissions that you will allow, in this case we only want to allow execution of code</FONT>
+pPermissions->AddPermission(new SecurityPermission(SecurityPermissionFlag::Execution));
+                                                                
+<FONT COLOR="green">// Make sure we have the permissions currently</FONT>
+pPermissions->Demand();
+
+<FONT COLOR="green">// Create the security policy level for this application domain</FONT>
+PolicyLevel* pSecurityLevel = PolicyLevel::CreateAppDomainLevel();
+
+<FONT COLOR="green">// Give the policy level's root code group a new policy statement based</FONT>
+<FONT COLOR="green">// on the new permission set.</FONT>
+pSecurityLevel->RootCodeGroup->PolicyStatement = new PolicyStatement(pPermissions);
+
+<FONT COLOR="green">// Update the application domain's policy now</FONT>
+AppDomain::CurrentDomain->SetAppDomainPolicy(pSecurityLevel);
+</PRE>
+</TD>
+</TR>
+</TABLE>
+<BR>
+The code above first creates a <a href="http://msdn.microsoft.com/library/en-us/cpref/html/frlrfSystemSecurityPermissionSetClassTopic.asp">
+<B>PermissionSet</B></A>, using the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemsecuritypermissionspermissionstateclasstopic.asp">
+<B>PermissionState::None</B></A> permission state, which is essentially saying 'Do not allow this code to do anything'.  
+Obviously, this is a little too restrictive, since at the very least, you will want the code that is running the scripts
+to be executed.  Given that, you can add a new permission to this list that you will allow, and as you see in the code 
+snippet, the <a href="http://msdn.microsoft.com/library/en-us/cpref/html/frlrfsystemsecuritypermissionssecuritypermissionflagclasstopic.asp"><B>
+SecurityPermissionFlag::Execution</B></A> is added (there are quite a few different security permissions that can be set in this manner).
+After the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemsecuritypolicypolicylevelclasstopic.asp">
+<B>PolicyLevel</B></A> is created, and the <B>RootCodeGroup</B> is updated, the application domain's security policy is
+updated.  Any assemblies loaded after this point (such as the scripts later) will have this security policy enforced.  Notice
+when you're running the sample, the final script fails to run due to the security violations.
+
+<p><BR><FONT CLASS="h2">Performance Considerations</FONT><BR>
+In this sample, you'll notice that the 
+<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemtypeclassinvokemembertopic.asp">
+<B>InvokeMember()</B></a> method is called in order to execute
+the script methods.  While this method is quick to implement and works well, this technique also
+relies on <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpconreflectionoverview.asp">
+<B>Reflection</B></a> to make this call, which can be an order of magnitude slower than simply calling the method directly.
+In the scenario where you are making one (or more) calls per frame as this sample is doing, you will
+probably want to implement a more efficient way to call these methods.
+<p>
+One of the easier implementations that has much better performance than this technique is by 
+defining an interface that the scripts must implement.  You would put this interface into a managed
+assembly which you would then add a reference to in your application.  When compiling the script, you
+would get the <B>Interface</B> type you declared in the managed assembly, and call the
+methods on that directly.  This would remove the cost of the 
+<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfsystemtypeclassinvokemembertopic.asp">
+<B>InvokeMember()</B></a>  method, and instead allow you to call into the compiled scripts
+directly.
+
+<p><BR><FONT CLASS="h2">Implementation Considerations</FONT><BR>
+It might not be possible (or practical) for your application to be compiled with the <B>/CLR</B> switch 
+to be compiled as a mixed mode assembly (one that contains both managed and unmanaged code) 
+like this sample does.  There are numerous other ways you could implement techniques similar to
+what this sample does such as:
+
+<p>
+<ul>
+<li>Separate mixed mode assembly that contains both the Script Engine code (like this example has) as 
+well as an unmanaged interopability layer that your unmanaged code will call.
+<li>Separate purely managed assembly (for example a C# assembly) that contains the ScriptEngine code
+where the classes are marked as <a href="http://msdn.microsoft.com/library/en-us/cpref/html/frlrfsystemruntimeinteropservicescomimportattributeclasstopic.asp">
+<B>[ComImport]</B></A>.  This method requires much more 'setup' time, since the managed assembly will need
+to be registered for COM use via the <a href="http://msdn.microsoft.com/library/en-us/cptools/html/cpgrfassemblyregistrationtoolregasmexe.asp">
+<B>RegAsm</B></A> tool.
+<li>Require the script code themselves to implement the <a href="http://msdn.microsoft.com/library/en-us/cpref/html/frlrfsystemruntimeinteropservicescomimportattributeclasstopic.asp">
+<B>[ComImport]</B></A> attribute. This is definitely the worst of the scenarios.
+</ul>
+
+
+<!-- FOOTER - DO NOT MODIFY -->
+<BR clear="left">
+<BR clear="left">
+<HR>
+<CENTER>
+Copyright (c) Microsoft Corporation. All rights reserved.
+</CENTER>
+<!-- END FOOTER -->
+
+<!-- MASTER TABLE - DO NOT MODIFY -->
+</TD>
+</TR>
+</TABLE>
+<!-- END MASTER TABLE -->
+
+</BODY>
+</HTML>

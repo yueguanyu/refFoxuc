@@ -1,0 +1,327 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "二七王游戏"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "UpGradeNC.EXE"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "UpGradeNC.EXE"
+            VALUE "ProductName", "二七王游戏"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_VIEW_CENTER         BITMAP                  "res\\VIEW_CENTER.bmp"
+IDB_VIEW_BACK           BITMAP                  "res\\VIEW_BACK.bmp"
+IDB_BANKER              BITMAP                  "res\\BANKER.bmp"
+IDB_START               BITMAP                  "res\\BT_START.bmp"
+IDB_SMALL_CARD          BITMAP                  "res\\SMALL_CARD.bmp"
+IDB_OUT_PROMPT          BITMAP                  "res\\OUT_PROMPT.bmp"
+IDB_OUT_CARD            BITMAP                  "res\\OUT_CARD.bmp"
+IDB_CARD                BITMAP                  "res\\CARD.bmp"
+IDB_STATION_TITLE       BITMAP                  "res\\CELL_SCORE.bmp"
+IDB_CALL_FANG_KUAI      BITMAP                  "res\\CALL_FANG_KUAI.bmp"
+IDB_CALL_HEI_TAO        BITMAP                  "res\\CALL_HEI_TAO.bmp"
+IDB_CALL_HONG_TAO       BITMAP                  "res\\CALL_HONG_TAO.bmp"
+IDB_CALL_MEI_HUA        BITMAP                  "res\\CALL_MEI_HUA.bmp"
+IDB_CALL_NT             BITMAP                  "res\\CALL_NT.bmp"
+IDB_SEND_CONCEAL        BITMAP                  "res\\SEND_CONCEAL.bmp"
+IDB_SCORE_BACK          BITMAP                  "res\\SCORE_BACK.bmp"
+IDB_WAIT_CONCEAL        BITMAP                  "res\\WAIT_CONCEAL.bmp"
+IDB_START_TRUSTEE       BITMAP                  "res\\托管.bmp"
+IDB_STOP_TRUSTEE        BITMAP                  "res\\取消托管.bmp"
+IDB_LAST_TURN_CARD      BITMAP                  "res\\上一轮.bmp"
+IDB_CONCEAL_CARD        BITMAP                  "res\\底牌.bmp"
+IDB_COLOR_FLAG          BITMAP                  "res\\COLOR_FLAG.bmp"
+IDB_CONCEAL_CARD_VIEW   BITMAP                  "res\\CONCEAL_CARD_VIEW.bmp"
+IDB_LAST_TURN_TIP       BITMAP                  "res\\LAST_TURN_TIP.bmp"
+IDB_WIN_LOSE            BITMAP                  "res\\WIN_LOSE.bmp"
+IDB_NO_MAIN             BITMAP                  "res\\NO_MAIN.bmp"
+IDB_BT_GIVEUP_GAME      BITMAP                  "res\\BT_GIVEUP.bmp"
+IDB_CALL_BACK           BITMAP                  "res\\CallScore\\CALL_BACK.bmp"
+IDB_CALL_120            BITMAP                  "res\\CallScore\\120.bmp"
+IDB_CALL_115            BITMAP                  "res\\CallScore\\115.bmp"
+IDB_CALL_110            BITMAP                  "res\\CallScore\\110.bmp"
+IDB_CALL_105            BITMAP                  "res\\CallScore\\105.bmp"
+IDB_CALL_100            BITMAP                  "res\\CallScore\\100.bmp"
+IDB_CALL_95             BITMAP                  "res\\CallScore\\95.bmp"
+IDB_CALL_90             BITMAP                  "res\\CallScore\\90.bmp"
+IDB_CALL_85             BITMAP                  "res\\CallScore\\85.bmp"
+IDB_CALL_80             BITMAP                  "res\\CallScore\\80.bmp"
+IDB_CALL_75             BITMAP                  "res\\CallScore\\75.bmp"
+IDB_CALL_70             BITMAP                  "res\\CallScore\\70.bmp"
+IDB_CALL_65             BITMAP                  "res\\CallScore\\65.bmp"
+IDB_CALL_60             BITMAP                  "res\\CallScore\\60.bmp"
+IDB_CALL_55             BITMAP                  "res\\CallScore\\55.bmp"
+IDB_CALL_50             BITMAP                  "res\\CallScore\\50.bmp"
+IDB_CALL_45             BITMAP                  "res\\CallScore\\45.bmp"
+IDB_CALL_40             BITMAP                  "res\\CallScore\\40.bmp"
+IDB_CALL_35             BITMAP                  "res\\CallScore\\35.bmp"
+IDB_CALL_30             BITMAP                  "res\\CallScore\\30.bmp"
+IDB_CALL_25             BITMAP                  "res\\CallScore\\25.bmp"
+IDB_CALL_20             BITMAP                  "res\\CallScore\\20.bmp"
+IDB_CALL_15             BITMAP                  "res\\CallScore\\15.bmp"
+IDB_CALL_10             BITMAP                  "res\\CallScore\\10.bmp"
+IDB_CALL_5              BITMAP                  "res\\CallScore\\5.bmp"
+IDB_CALL_0              BITMAP                  "res\\CallScore\\0.bmp"
+IDB_CALL_GIVEUP         BITMAP                  "res\\CallScore\\Giveup.bmp"
+IDB_SCORE_CARD          BITMAP                  "res\\SCORE_CARD.bmp"
+IDB_COLOR_BACK          BITMAP                  "res\\CALL_HUASE.bmp"
+IDB_BT_OKSTART          BITMAP                  "res\\OKSTART.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+NUMBER                  PNG                     "res\\number.png"
+NO_CALL                 PNG                     "res\\no_call.png"
+MAIN_1                  PNG                     "res\\main1.png"
+MAIN_2                  PNG                     "res\\main2.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CARD_CUR            CURSOR                  "res\\CARD_CUR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+BACKMUSIC               WAVE                    "res\\sound\\back.wav"
+OUT_CARD                WAVE                    "res\\OUT_CARD.wav"
+GAME_WIN                WAVE                    "res\\GAME_WIN.wav"
+GAME_WARN               WAVE                    "res\\GAME_WARN.WAV"
+GAME_START              WAVE                    "res\\GAME_START.WAV"
+GAME_LOST               WAVE                    "res\\GAME_LOST.wav"
+GAME_END                WAVE                    "res\\GAME_END.WAV"
+CALL_CARD               WAVE                    "Res\\CALL_CARD.wav"
+THROW_RESULT            WAVE                    "res\\THROW_RESULT.wav"
+EIGHT_CARD              WAVE                    "res\\EIGHT.wav"
+CATCH_5                 WAVE                    "res\\catch5.wav"
+OUT_DOUBLE              WAVE                    "res\\Out_Double.wav"
+OUT_TRACTOR             WAVE                    "res\\Out_Tractor.wav"
+CLICK_START             WAVE                    "res\\clickstart.wav"
+LAND_SCORE              WAVE                    "res\\LandScore.wav"
+GIVEUP_SCORE            WAVE                    "res\\GiveUpScore.wav"
+THROW_CARD              WAVE                    "res\\Throw.wav"
+M_NOCALL                WAVE                    "res\\sound\\M_NOCALL.wav"
+M_0                     WAVE                    "res\\sound\\M_0.wav"
+M_5                     WAVE                    "res\\sound\\M_5.wav"
+M_10                    WAVE                    "res\\sound\\M_10.wav"
+M_15                    WAVE                    "res\\sound\\M_15.wav"
+M_20                    WAVE                    "res\\sound\\M_20.wav"
+M_25                    WAVE                    "res\\sound\\M_25.wav"
+M_30                    WAVE                    "res\\sound\\M_30.wav"
+M_35                    WAVE                    "res\\sound\\M_35.wav"
+M_40                    WAVE                    "res\\sound\\M_40.wav"
+M_45                    WAVE                    "res\\sound\\M_45.wav"
+M_50                    WAVE                    "res\\sound\\M_50.wav"
+M_55                    WAVE                    "res\\sound\\M_55.wav"
+M_60                    WAVE                    "res\\sound\\M_60.wav"
+M_65                    WAVE                    "res\\sound\\M_65.wav"
+M_70                    WAVE                    "res\\sound\\M_70.wav"
+M_75                    WAVE                    "res\\sound\\M_75.wav"
+M_80                    WAVE                    "res\\sound\\M_80.wav"
+M_85                    WAVE                    "res\\sound\\M_85.wav"
+M_90                    WAVE                    "res\\sound\\M_90.wav"
+M_95                    WAVE                    "res\\sound\\M_95.wav"
+M_100                   WAVE                    "res\\sound\\M_100.wav"
+M_105                   WAVE                    "res\\sound\\M_105.wav"
+M_110                   WAVE                    "res\\sound\\M_110.wav"
+M_115                   WAVE                    "res\\sound\\M_115.wav"
+F_NOCALL                WAVE                    "res\\sound\\F_NOCALL.wav"
+F_0                     WAVE                    "res\\sound\\F_0.wav"
+F_5                     WAVE                    "res\\sound\\F_5.wav"
+F_10                    WAVE                    "res\\sound\\F_10.wav"
+F_15                    WAVE                    "res\\sound\\F_15.wav"
+F_20                    WAVE                    "res\\sound\\F_20.wav"
+F_25                    WAVE                    "res\\sound\\F_25.wav"
+F_30                    WAVE                    "res\\sound\\F_30.wav"
+F_35                    WAVE                    "res\\sound\\F_35.wav"
+F_40                    WAVE                    "res\\sound\\F_40.wav"
+F_45                    WAVE                    "res\\sound\\F_45.wav"
+F_50                    WAVE                    "res\\sound\\F_50.wav"
+F_55                    WAVE                    "res\\sound\\F_55.wav"
+F_60                    WAVE                    "res\\sound\\F_60.wav"
+F_65                    WAVE                    "res\\sound\\F_65.wav"
+F_70                    WAVE                    "res\\sound\\F_70.wav"
+F_75                    WAVE                    "res\\sound\\F_75.wav"
+F_80                    WAVE                    "res\\sound\\F_80.wav"
+F_85                    WAVE                    "res\\sound\\F_85.wav"
+F_90                    WAVE                    "res\\sound\\F_90.wav"
+F_95                    WAVE                    "res\\sound\\F_95.wav"
+F_100                   WAVE                    "res\\sound\\F_100.wav"
+F_105                   WAVE                    "res\\sound\\F_105.wav"
+F_110                   WAVE                    "res\\sound\\F_110.wav"
+F_115                   WAVE                    "res\\sound\\F_115.wav"
+M_COLOR_FK              WAVE                    "res\\sound\\M_COLOR_FK.wav"
+M_COLOR_HT              WAVE                    "res\\sound\\M_COLOR_HT.wav"
+M_COLOR_RED             WAVE                    "res\\sound\\M_COLOR_RED.wav"
+M_COLOR_MH              WAVE                    "res\\sound\\M_COLOR_MH.wav"
+F_COLOR_FK              WAVE                    "res\\sound\\F_COLOR_FK.wav"
+F_COLOR_HT              WAVE                    "res\\sound\\F_COLOR_HT.wav"
+F_COLOR_RED             WAVE                    "res\\sound\\F_COLOR_RED.wav"
+F_COLOR_MH              WAVE                    "res\\sound\\F_COLOR_MH.wav"
+M_END_0                 WAVE                    "res\\sound\\M_END_0.wav"
+M_END_1                 WAVE                    "res\\sound\\M_END_1.wav"
+M_END_2                 WAVE                    "res\\sound\\M_END_2.wav"
+M_END_3                 WAVE                    "res\\sound\\M_END_3.wav"
+M_END_4                 WAVE                    "res\\sound\\M_END_4.wav"
+M_END_5                 WAVE                    "res\\sound\\M_END_5.wav"
+M_END_6                 WAVE                    "res\\sound\\M_END_6.wav"
+M_END_7                 WAVE                    "res\\sound\\M_END_7.wav"
+M_END_8                 WAVE                    "res\\sound\\M_END_8.wav"
+M_END_9                 WAVE                    "res\\sound\\M_END_9.wav"
+M_END_255               WAVE                    "res\\sound\\M_END_255.wav"
+F_END_0                 WAVE                    "res\\sound\\F_END_0.wav"
+F_END_1                 WAVE                    "res\\sound\\F_END_1.wav"
+F_END_2                 WAVE                    "res\\sound\\F_END_2.wav"
+F_END_3                 WAVE                    "res\\sound\\F_END_3.wav"
+F_END_4                 WAVE                    "res\\sound\\F_END_4.wav"
+F_END_5                 WAVE                    "res\\sound\\F_END_5.wav"
+F_END_6                 WAVE                    "res\\sound\\F_END_6.wav"
+F_END_7                 WAVE                    "res\\sound\\F_END_7.wav"
+F_END_8                 WAVE                    "res\\sound\\F_END_8.wav"
+F_END_9                 WAVE                    "res\\sound\\F_END_9.wav"
+F_END_255               WAVE                    "res\\sound\\F_END_255.wav"
+M_DUI                   WAVE                    "res\\sound\\M_DUI.wav"
+M_SHUAI                 WAVE                    "res\\sound\\M_SHUAI.wav"
+M_TUO                   WAVE                    "res\\sound\\M_TUO.wav"
+F_DUI                   WAVE                    "res\\sound\\F_DUI.wav"
+F_SHUAI                 WAVE                    "res\\sound\\F_SHUAI.wav"
+F_TUO                   WAVE                    "res\\sound\\F_TUO.wav"
+M_SHA                   WAVE                    "res\\sound\\M_SHA.wav"
+M_DIAO                  WAVE                    "res\\sound\\M_DIAO.wav"
+F_SHA                   WAVE                    "res\\sound\\F_SHA.wav"
+F_DIAO                  WAVE                    "res\\sound\\F_DIAO.wav"
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

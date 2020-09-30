@@ -1,0 +1,280 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "金鲨银鲨客户端"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "SharkBattle.exe"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "SharkBattle.exe"
+            VALUE "ProductName", "金鲨银鲨客户端"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+BET_BACK                PNG                     "res\\BET_BACK.PNG"
+BET_NUMBER              PNG                     "res\\BET_NUMBER.PNG"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MAIN
+//
+
+KEEP_OUT                MAIN                    "res\\MAIN\\KEEP_OUT.png"
+MAIN_BACK               MAIN                    "res\\MAIN\\MAIN_BACK.png"
+MAIN_ANIMALS            MAIN                    "res\\MAIN\\MAIN_ANIMALS.png"
+MAIN_ANIMALS_BACK       MAIN                    "res\\MAIN\\MAIN_ANIMALS_BACK.png"
+NUMBER_GREEN            MAIN                    "res\\MAIN\\NUMBER_GREEN.png"
+NUMBER_RED              MAIN                    "res\\MAIN\\NUMBER_RED.png"
+NUMBER_YELLOW           MAIN                    "res\\MAIN\\NUMBER_YELLOW.png"
+NUMBER_BLUE             MAIN                    "res\\MAIN\\NUMBER_BLUE.png"
+TIME_NUMBER             MAIN                    "res\\MAIN\\TIME_NUMBER.png"
+TIME_BACK               MAIN                    "res\\MAIN\\TIME_BACK.png"
+HISTORY_ANIMAL          MAIN                    "res\\MAIN\\HISTORY_ANIMAL.png"
+FLICKER_GREEN           MAIN                    "res\\MAIN\\FLICKER_GREEN.png"
+FLICKER_RED             MAIN                    "res\\MAIN\\FLICKER_RED.png"
+FLICKER_YELLOW          MAIN                    "res\\MAIN\\FLICKER_YELLOW.png"
+KEEP_OUT_ON_BET         MAIN                    "res\\MAIN\\KEEP_OUT_ON_BET.png"
+LASER_I                 MAIN                    "res\\MAIN\\LASER_I.png"
+LASER_II                MAIN                    "res\\MAIN\\LASER_II.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BTPNG
+//
+
+BT_ANIMAL_LION          BTPNG                   "res\\BTPNG\\BT_ANIMAL_LION.png"
+BT_ANIMAL_PANDA         BTPNG                   "res\\BTPNG\\BT_ANIMAL_PANDA.png"
+BT_ANIMAL_MONKEY        BTPNG                   "res\\BTPNG\\BT_ANIMAL_MONKEY.png"
+BT_ANIMAL_RABBIT        BTPNG                   "res\\BTPNG\\BT_ANIMAL_RABBIT.png"
+BT_ANIMAL_EAGLE         BTPNG                   "res\\BTPNG\\BT_ANIMAL_EAGLE.png"
+BT_ANIMAL_PEACOCK       BTPNG                   "res\\BTPNG\\BT_ANIMAL_PEACOCK.png"
+BT_ANIMAL_PIGEON        BTPNG                   "res\\BTPNG\\BT_ANIMAL_PIGEON.png"
+BT_ANIMAL_SWALLOW       BTPNG                   "res\\BTPNG\\BT_ANIMAL_SWALLOW.png"
+BT_ANIMAL_SLIVER_SHARK  BTPNG                   "res\\BTPNG\\BT_ANIMAL_SLIVER_SHARK.png"
+BT_ANIMAL_GOLD_SHARK    BTPNG                   "res\\BTPNG\\BT_ANIMAL_GOLD_SHARK.png"
+BT_ANIMAL_BIRD          BTPNG                   "res\\BTPNG\\BT_ANIMAL_BIRD.png"
+BT_ANIMAL_BEAST         BTPNG                   "res\\BTPNG\\BT_ANIMAL_BEAST.png"
+BT_OPERATION_RENEWAL    BTPNG                   "res\\BTPNG\\BT_OPERATION_RENEWAL.png"
+BT_OPERATION_CANCEL     BTPNG                   "res\\BTPNG\\BT_OPERATION_CANCEL.png"
+BT_OPERATION_SWITCH     BTPNG                   "res\\BTPNG\\BT_OPERATION_SWITCH.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CHIP
+//
+
+CHIP_BACK               CHIP                    "res\\CHIP\\CHIP_BACK.png"
+BT_CHIP_100             CHIP                    "res\\CHIP\\BT_CHIP_100.png"
+BT_CHIP_1000            CHIP                    "res\\CHIP\\BT_CHIP_1000.png"
+BT_CHIP_10000           CHIP                    "res\\CHIP\\BT_CHIP_10000.png"
+BT_CHIP_MAX             CHIP                    "res\\CHIP\\BT_CHIP_MAX.png"
+BT_CHIP_EMPTY           CHIP                    "res\\CHIP\\BT_CHIP_EMPTY.png"
+BT_CHIP_OK              CHIP                    "res\\CHIP\\BT_CHIP_OK.png"
+BT_CHIP_CLOSE           CHIP                    "res\\CHIP\\BT_CHIP_CLOSE.png"
+BT_CHIP_CLOSE_X         CHIP                    "res\\CHIP\\BT_CHIP_CLOSE_X.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// OVER
+//
+
+OVER_BACK               OVER                    "res\\OVER\\OVER_BACK.png"
+OVER_NUMBER             OVER                    "res\\OVER\\OVER_NUMBER.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WIN
+//
+
+WIN_LION                WIN                     "res\\WIN\\WIN_LION.png"
+WIN_PANDA               WIN                     "res\\WIN\\WIN_PANDA.png"
+WIN_MONKEY              WIN                     "res\\WIN\\WIN_MONKEY.png"
+WIN_RABBIT              WIN                     "res\\WIN\\WIN_RABBIT.png"
+WIN_EAGLE               WIN                     "res\\WIN\\WIN_EAGLE.png"
+WIN_PEACOCK             WIN                     "res\\WIN\\WIN_PEACOCK.png"
+WIN_PIGEON              WIN                     "res\\WIN\\WIN_PIGEON.png"
+WIN_SWALLOW             WIN                     "res\\WIN\\WIN_SWALLOW.png"
+WIN_SLIVER_SHARK        WIN                     "res\\WIN\\WIN_SLIVER_SHARK.png"
+WIN_GOLD_SHARK          WIN                     "res\\WIN\\WIN_GOLD_SHARK.png"
+PRIZES_NUMBER           WIN                     "res\\WIN\\PRIZES_NUMBER.png"
+WIN_PRIZES              WIN                     "res\\WIN\\WIN_PRIZES.png"
+WIN_BRIGHT              WIN                     "res\\WIN\\WIN_BRIGHT.png"
+WIN_LION_S              WIN                     "res\\WIN\\WIN_LION_S.png"
+WIN_PANDA_S             WIN                     "res\\WIN\\WIN_PANDA_S.png"
+WIN_MONKEY_S            WIN                     "res\\WIN\\WIN_MONKEY_S.png"
+WIN_RABBIT_S            WIN                     "res\\WIN\\WIN_RABBIT_S.png"
+WIN_EAGLE_S             WIN                     "res\\WIN\\WIN_EAGLE_S.png"
+WIN_PEACOCK_S           WIN                     "res\\WIN\\WIN_PEACOCK_S.png"
+WIN_PIGEON_S            WIN                     "res\\WIN\\WIN_PIGEON_S.png"
+WIN_SWALLOW_S           WIN                     "res\\WIN\\WIN_SWALLOW_S.png"
+WIN_SLIVER_SHARK_S      WIN                     "res\\WIN\\WIN_SLIVER_SHARK_S.png"
+WIN_GOLD_SHARK_S        WIN                     "res\\WIN\\WIN_GOLD_SHARK_S.png"
+WIN_SHARK_0             WIN                     "res\\WIN\\WIN_SHARK_0.png"
+WIN_SHARK_1             WIN                     "res\\WIN\\WIN_SHARK_1.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// FISH
+//
+
+FISH_BACK_I             FISH                    "res\\FISH\\FISH_BACK_I.png"
+FISH_BACK_II            FISH                    "res\\FISH\\FISH_BACK_II.png"
+FISH_BACK_III           FISH                    "res\\FISH\\FISH_BACK_III.png"
+FISH_BACK_IV            FISH                    "res\\FISH\\FISH_BACK_IV.png"
+FISH_BACK_V             FISH                    "res\\FISH\\FISH_BACK_V.png"
+FISH_BACK_VI            FISH                    "res\\FISH\\FISH_BACK_VI.png"
+FISH_BACK_VII           FISH                    "res\\FISH\\FISH_BACK_VII.png"
+FISH_1                  FISH                    "res\\FISH\\FISH_1.png"
+FISH_2                  FISH                    "res\\FISH\\FISH_2.png"
+FISH_3                  FISH                    "res\\FISH\\FISH_3.png"
+FISH_4                  FISH                    "res\\FISH\\FISH_4.png"
+FISH_5                  FISH                    "res\\FISH\\FISH_5.png"
+FISH_6                  FISH                    "res\\FISH\\FISH_6.png"
+FISH_GUN                FISH                    "res\\FISH\\FISH_GUN.png"
+FISH_CANNON             FISH                    "res\\FISH\\FISH_CANNON.png"
+FISH_BULLET             FISH                    "res\\FISH\\FISH_BULLET.png"
+FISH_NET                FISH                    "res\\FISH\\FISH_NET.png"
+WATER_1                 FISH                    "res\\FISH\\WATER_1.png"
+WATER_2                 FISH                    "res\\FISH\\WATER_2.png"
+WATER_3                 FISH                    "res\\FISH\\WATER_3.png"
+WATER_4                 FISH                    "res\\FISH\\WATER_4.png"
+WATER_5                 FISH                    "res\\FISH\\WATER_5.png"
+WATER_6                 FISH                    "res\\FISH\\WATER_6.png"
+WATER_7                 FISH                    "res\\FISH\\WATER_7.png"
+WATER_8                 FISH                    "res\\FISH\\WATER_8.png"
+WATER_9                 FISH                    "res\\FISH\\WATER_9.png"
+WATER_10                FISH                    "res\\FISH\\WATER_10.png"
+WATER_11                FISH                    "res\\FISH\\WATER_11.png"
+WATER_12                FISH                    "res\\FISH\\WATER_12.png"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

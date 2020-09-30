@@ -1,0 +1,291 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳网狐科技有限公司"
+            VALUE "CompanyName", "深圳网狐科技有限公司"
+            VALUE "FileDescription", "欢乐斗地主游戏"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "Land.exe"
+            VALUE "LegalCopyright", "深圳网狐科技有限公司,保留所有权利。"
+            VALUE "OriginalFilename", "Land.exe"
+            VALUE "ProductName", "欢乐斗地主游戏"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_BT_SORT_CARD_COUNT  BITMAP                  "res\\BT_SORT_CARD_COUNT.bmp"
+IDB_BT_SORT_CARD_ORDER  BITMAP                  "res\\BT_SORT_CARD_ORDER.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+GAME_CARD               PNG                     "res\\GAME_CARD.PNG"
+USER_FRAME_MYSELF       PNG                     "res\\USER_FRAME_MYSELF.png"
+GAME_CARD_SMALL         PNG                     "res\\GAME_CARD_SMALL.png"
+USER_FRAME_PLAYER       PNG                     "res\\USER_FRAME_PLAYER.png"
+HISTORY_SCORE           PNG                     "res\\HISTORY_SCORE.png"
+BANKER_CARD_BACK        PNG                     "res\\BANKER_CARD_BACK.png"
+GAME_SCORE              PNG                     "res\\GAME_SCORE.png"
+CARD_NUMBER             PNG                     "res\\CARD_NUMBER.png"
+CELL_NUMBER             PNG                     "res\\CELL_NUMBER.png"
+BT_OUT_CARD             PNG                     "res\\BT_OUT_CARD.png"
+BT_OUT_PROMPT           PNG                     "res\\BT_OUT_PROMPT.png"
+BT_PASS_CARD            PNG                     "res\\BT_PASS_CARD.png"
+BT_START                PNG                     "res\\BT_START.png"
+VIEW_BACK               PNG                     "res\\VIEW_BACK.png"
+VIEW_FILL               PNG                     "res\\VIEW_FILL.png"
+CARTOON_BOMB            PNG                     "res\\CARTOON_BOMB.png"
+BT_SHOW_SCORE           PNG                     "res\\BT_SHOW_SCORE.png"
+BT_CLOSE_SCORE          PNG                     "res\\BT_CLOSE_SCORE.png"
+USER_PASS               PNG                     "res\\USER_PASS.png"
+LAST_TURN               PNG                     "res\\LAST_TURN.png"
+BT_CALL_SCORE_1         PNG                     "res\\BT_CALL_SCORE_1.PNG"
+BT_CALL_SCORE_2         PNG                     "res\\BT_CALL_SCORE_2.PNG"
+BT_CALL_SCORE_3         PNG                     "res\\BT_CALL_SCORE_3.PNG"
+BT_CALL_SCORE_NONE      PNG                     "res\\BT_CALL_SCORE_NONE.png"
+REVERSAL_CARD           PNG                     "res\\REVERSAL_CARD.png"
+DISPATCH_CARD           PNG                     "res\\DISPATCH_CARD.png"
+BT_CARD_PROMPT_1        PNG                     "res\\BT_CARD_PROMPT_1.png"
+BT_CARD_PROMPT_2        PNG                     "res\\BT_CARD_PROMPT_2.png"
+BT_CARD_PROMPT_3        PNG                     "res\\BT_CARD_PROMPT_3.png"
+BT_CARD_PROMPT_4        PNG                     "res\\BT_CARD_PROMPT_4.png"
+BT_CARD_PROMPT_5        PNG                     "res\\BT_CARD_PROMPT_5.png"
+BT_CARD_PROMPT_6        PNG                     "res\\BT_CARD_PROMPT_6.png"
+CELL_SCORE_BACK         PNG                     "res\\CELL_SCORE_BACK.png"
+BANKER_FLAG             PNG                     "res\\BANKER_FLAG.png"
+COUNT_WARN              PNG                     "res\\COUNT_WARN.png"
+REMNANT_CARD_NUMBER     PNG                     "res\\REMNANT_CARD_NUMBER.png"
+BT_LAST_TURN            PNG                     "res\\BT_LAST_TURN.png"
+BT_SORT_CARD_ORDER      PNG                     "res\\BT_SORT_CARD_ORDER.png"
+BT_SORT_CARD_COUNT      PNG                     "res\\BT_SORT_CARD_COUNT.PNG"
+BT_START_TRUSTEE        PNG                     "res\\BT_START_TRUSTEE.PNG"
+BT_STOP_TRUSTEE         PNG                     "res\\BT_STOP_TRUSTEE.PNG"
+WAIT_CALL_SCORE         PNG                     "res\\WAIT_CALL_SCORE.PNG"
+CALL_SCORE              PNG                     "res\\CALL_SCORE.PNG"
+WIN_LOSE_FLAG           PNG                     "res\\WIN_LOSE_FLAG.png"
+SCORE_CARTOON           PNG                     "res\\SCORE_CARTOON.png"
+BOMB_NUMBER             PNG                     "res\\BOMB_NUMBER.png"
+BT_CLOSE                PNG                     "res\\BT_CLOSE.PNG"
+CARTOON_PLAN            PNG                     "res\\CARTOON_PLAN.png"
+MEMBER_FLAG             PNG                     "res\\MEMBER_FLAG.png"
+ROCKET                  PNG                     "res\\ROCKET.png"
+CHUN_TIAN               PNG                     "res\\CHUN_TIAN.png"
+FEN_WEI                 PNG                     "res\\FEN_WEI.png"
+FEN_TOU                 PNG                     "res\\FEN_TOU.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CARD_CUR            CURSOR                  "res\\CARD_CUR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+GAME_START              WAVE                    "res\\GAME_START.wav"
+DISPATCH_CARD           WAVE                    "res\\DISPATCH_CARD.wav"
+BANKER_INFO             WAVE                    "res\\BANKER_INFO.wav"
+REVERSAL_CARD           WAVE                    "res\\REVERSAL_CARD.wav"
+SCORE_1_BOY             WAVE                    "res\\BOY\\SCORE_1.WAV"
+SCORE_3_BOY             WAVE                    "res\\BOY\\SCORE_3.wav"
+SCORE_2_BOY             WAVE                    "res\\BOY\\SCORE_2.wav"
+SCORE_NONE_BOY          WAVE                    "res\\BOY\\SCORE_NONE.wav"
+PASS_CARD_BOY           WAVE                    "res\\BOY\\PASS_CARD.wav"
+SINGLE_1_BOY            WAVE                    "res\\BOY\\SINGLE_1.wav"
+SINGLE_2_BOY            WAVE                    "res\\BOY\\SINGLE_2.wav"
+SINGLE_3_BOY            WAVE                    "res\\BOY\\SINGLE_3.wav"
+SINGLE_4_BOY            WAVE                    "res\\BOY\\SINGLE_4.wav"
+SINGLE_5_BOY            WAVE                    "res\\BOY\\SINGLE_5.wav"
+SINGLE_6_BOY            WAVE                    "res\\BOY\\SINGLE_6.wav"
+SINGLE_7_BOY            WAVE                    "res\\BOY\\SINGLE_7.wav"
+SINGLE_8_BOY            WAVE                    "res\\BOY\\SINGLE_8.wav"
+SINGLE_9_BOY            WAVE                    "res\\BOY\\SINGLE_9.wav"
+SINGLE_10_BOY           WAVE                    "res\\BOY\\SINGLE_10.wav"
+SINGLE_11_BOY           WAVE                    "res\\BOY\\SINGLE_11.wav"
+SINGLE_12_BOY           WAVE                    "res\\BOY\\SINGLE_12.wav"
+SINGLE_13_BOY           WAVE                    "res\\BOY\\SINGLE_13.wav"
+SINGLE_14_BOY           WAVE                    "res\\BOY\\SINGLE_14.wav"
+SINGLE_15_BOY           WAVE                    "res\\BOY\\SINGLE_15.wav"
+DOUBLE_BOY              WAVE                    "res\\BOY\\DOUBLE.wav"
+SINGLE_LINE_BOY         WAVE                    "res\\BOY\\SINGLE_LINE.wav"
+DOUBLE_LINE_BOY         WAVE                    "res\\BOY\\DOUBLE_LINE.wav"
+THREE_BOY               WAVE                    "res\\BOY\\THREE.wav"
+THREE_LINE_BOY          WAVE                    "res\\BOY\\THREE_LINE.wav"
+THREE_TAKE_ONE_BOY      WAVE                    "res\\BOY\\THREE_TAKE_ONE.wav"
+THREE_TAKE_TWO_BOY      WAVE                    "res\\BOY\\THREE_TAKE_TWO.wav"
+FOUR_TAKE_ONE_BOY       WAVE                    "res\\BOY\\FOUR_TAKE_ONE.wav"
+FOUR_TAKE_TWO_BOY       WAVE                    "res\\BOY\\FOUR_TAKE_TWO.wav"
+MISSILE_CARD_BOY        WAVE                    "res\\BOY\\MISSILE_CARD.wav"
+BOMB_CARD_BOY           WAVE                    "res\\BOY\\BOMB_CARD.wav"
+THREE_ONE_LINE_BOY      WAVE                    "res\\BOY\\THREE_ONE_LINE.wav"
+SCORE_1_GIRL            WAVE                    "res\\GIRL\\SCORE_1.WAV"
+SCORE_3_GIRL            WAVE                    "res\\GIRL\\SCORE_3.wav"
+SCORE_2_GIRL            WAVE                    "res\\GIRL\\SCORE_2.wav"
+SCORE_NONE_GIRL         WAVE                    "res\\GIRL\\SCORE_NONE.wav"
+PASS_CARD_GIRL          WAVE                    "res\\GIRL\\PASS_CARD.wav"
+SINGLE_1_GIRL           WAVE                    "res\\GIRL\\SINGLE_1.wav"
+SINGLE_2_GIRL           WAVE                    "res\\GIRL\\SINGLE_2.wav"
+SINGLE_3_GIRL           WAVE                    "res\\GIRL\\SINGLE_3.wav"
+SINGLE_4_GIRL           WAVE                    "res\\GIRL\\SINGLE_4.wav"
+SINGLE_5_GIRL           WAVE                    "res\\GIRL\\SINGLE_5.wav"
+SINGLE_6_GIRL           WAVE                    "res\\GIRL\\SINGLE_6.wav"
+SINGLE_7_GIRL           WAVE                    "res\\GIRL\\SINGLE_7.wav"
+SINGLE_8_GIRL           WAVE                    "res\\GIRL\\SINGLE_8.wav"
+SINGLE_9_GIRL           WAVE                    "res\\GIRL\\SINGLE_9.wav"
+SINGLE_10_GIRL          WAVE                    "res\\GIRL\\SINGLE_10.wav"
+SINGLE_11_GIRL          WAVE                    "res\\GIRL\\SINGLE_11.wav"
+SINGLE_12_GIRL          WAVE                    "res\\GIRL\\SINGLE_12.wav"
+SINGLE_13_GIRL          WAVE                    "res\\GIRL\\SINGLE_13.wav"
+SINGLE_14_GIRL          WAVE                    "res\\GIRL\\SINGLE_14.wav"
+SINGLE_15_GIRL          WAVE                    "res\\GIRL\\SINGLE_15.wav"
+DOUBLE_GIRL             WAVE                    "res\\GIRL\\DOUBLE.wav"
+SINGLE_LINE_GIRL        WAVE                    "res\\GIRL\\SINGLE_LINE.wav"
+DOUBLE_LINE_GIRL        WAVE                    "res\\GIRL\\DOUBLE_LINE.wav"
+THREE_GIRL              WAVE                    "res\\GIRL\\THREE.wav"
+THREE_LINE_GIRL         WAVE                    "res\\GIRL\\THREE_LINE.wav"
+THREE_TAKE_ONE_GIRL     WAVE                    "res\\GIRL\\THREE_TAKE_ONE.wav"
+THREE_TAKE_TWO_GIRL     WAVE                    "res\\GIRL\\THREE_TAKE_TWO.wav"
+FOUR_TAKE_ONE_GIRL      WAVE                    "res\\GIRL\\FOUR_TAKE_ONE.wav"
+FOUR_TAKE_TWO_GIRL      WAVE                    "res\\GIRL\\FOUR_TAKE_TWO.wav"
+MISSILE_CARD_GIRL       WAVE                    "res\\GIRL\\MISSILE_CARD.wav"
+BOMB_CARD_GIRL          WAVE                    "res\\GIRL\\BOMB_CARD.wav"
+THREE_ONE_LINE_GIRL     WAVE                    "res\\GIRL\\THREE_ONE_LINE.wav"
+OUT_CARD_BOY            WAVE                    "res\\BOY\\OUT_CARD.wav"
+OUT_CARD_GIRL           WAVE                    "res\\GIRL\\OUT_CARD.wav"
+GAME_CONCLUDE           WAVE                    "res\\GAME_CONCLUDE.wav"
+GAME_LOSE               WAVE                    "res\\GAME_LOSE.WAV"
+GAME_WIN                WAVE                    "res\\GAME_WIN.wav"
+COUNT_WARN              WAVE                    "res\\COUNT_WARN.wav"
+GAME_WARN               WAVE                    "res\\GAME_WARN.wav"
+BOMB                    WAVE                    "res\\BOMB.wav"
+PLANE                   WAVE                    "res\\PLANE.wav"
+BACK_MUSIC              WAVE                    "res\\BACK_MUSIC.wav"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

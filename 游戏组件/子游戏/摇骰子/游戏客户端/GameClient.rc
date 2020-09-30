@@ -1,0 +1,454 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "摇骰子游戏客户端"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "LiarsDice.exe"
+            VALUE "OriginalFilename", "LiarsDice.exe"
+            VALUE "ProductName", "摇骰子游戏客户端"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+GAME_LOGO               BITMAP                  "res\\GAME_LOGO.bmp"
+IDB_BT_START            BITMAP                  "res\\BT_START.bmp"
+IDB_VIEW_BACK           BITMAP                  "res\\VIEW_BACK.bmp"
+IDB_BT_SETCHIP          BITMAP                  "res\\BT_SETCHIP.bmp"
+IDB_GAME_END            BITMAP                  "res\\GAME_END.bmp"
+IDB_VIEW_CENTER         BITMAP                  "res\\VIEW_CENTER.bmp"
+IDB_SEZI                BITMAP                  "res\\shaizi.bmp"
+IDB_BT_DICE_NUM_1       BITMAP                  "res\\dicenum1.bmp"
+IDB_BT_SCROLL_UP        BITMAP                  "res\\BT_ScrollUp.bmp"
+IDB_BT_SCROLL_DOWN      BITMAP                  "res\\bt_scrolldown.bmp"
+IDB_SEZI_BACK           BITMAP                  "res\\seziback.bmp"
+IDB_BT_YELL_OK          BITMAP                  "res\\BT_HANHUA.bmp"
+IDB_BT_OPEN_DICE        BITMAP                  "res\\BT_KAISHAI.bmp"
+IDB_BT_OK               BITMAP                  "res\\BT_QUEDING.bmp"
+IDB_BT_LOOK_DICE        BITMAP                  "res\\BT_KANSHAI.bmp"
+IDB_BT_DICE_NUM_2       BITMAP                  "res\\dicenum2.bmp"
+IDB_BT_DICE_NUM_3       BITMAP                  "res\\dicenum3.bmp"
+IDB_BT_DICE_NUM_4       BITMAP                  "res\\dicenum4.bmp"
+IDB_BT_DICE_NUM_5       BITMAP                  "res\\dicenum5.bmp"
+IDB_BT_DICE_NUM_6       BITMAP                  "res\\dicenum6.bmp"
+IDB_BT_THROW_DICE       BITMAP                  "res\\BT_YAOSHAI.bmp"
+IDB_ANI_THROWDICE_TOP   BITMAP                  "res\\AniTDtop.bmp"
+IDB_ANI_THROWDICE_BOTTOM BITMAP                  "res\\AniTDBottom.bmp"
+IDB_ANI_OPENDICE_BOTTOM BITMAP                  "res\\AniODBottom.bmp"
+IDB_ANI_OPENDICE_TOP    BITMAP                  "res\\AniODTop.bmp"
+IDB_SEZI_SMALL          BITMAP                  "res\\shaizi_small.bmp"
+IDB_BT_CHIP_1           BITMAP                  "res\\bt_chip1.bmp"
+IDB_BT_CHIP_2           BITMAP                  "res\\bt_chip2.bmp"
+IDB_BT_CHIP_3           BITMAP                  "res\\bt_chip3.bmp"
+IDB_BT_CHIP_4           BITMAP                  "res\\bt_chip4.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CARD_CUR            CURSOR                  "res\\CARD_CUR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTION DIALOGEX 0, 0, 193, 130
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,37,109,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,109,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,151,32,20,20
+    CONTROL         "允许声音效果",IDC_ENABLE_SOUND,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,23,55,64,10
+    COMBOBOX        IDC_CARD_SPACE,132,68,31,181,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "扑克间距为",IDC_STATIC,78,70,41,9,NOT WS_VISIBLE
+    LTEXT           "象素",IDC_STATIC,169,70,17,9,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMPARETIME,132,90,31,113,CBS_DROPDOWNLIST | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "每墩比较时间",IDC_STATIC,78,92,49,8,NOT WS_VISIBLE
+    LTEXT           "秒",IDC_STATIC,169,91,9,8,NOT WS_VISIBLE
+    GROUPBOX        "普通设置",IDC_STATIC,16,23,121,73
+END
+
+IDD_GAME_SCORE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_GAME_SCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+GAME_START              WAVE                    "res\\GAME_START.WAV"
+GAME_WARN               WAVE                    "res\\GAME_WARN.WAV"
+GAME_WIN                WAVE                    "res\\GAME_WIN.wav"
+GAME_LOST               WAVE                    "res\\GAME_LOST.wav"
+OUT_CARD                WAVE                    "res\\OUT_CARD.wav"
+DRAW_SICE               WAVE                    "res\\DRAW_SICE.wav"
+GAME_OPEN_B             WAVE                    "res\\GAME_OPEN_B.wav"
+YELL_21_B               WAVE                    "res\\sound\\21_b.wav"
+YELL_22_B               WAVE                    "res\\sound\\22_b.wav"
+YELL_23_B               WAVE                    "res\\sound\\23_b.wav"
+YELL_24_B               WAVE                    "res\\sound\\24_b.wav"
+YELL_25_B               WAVE                    "res\\sound\\25_b.wav"
+YELL_26_B               WAVE                    "res\\sound\\26_b.wav"
+YELL_31_B               WAVE                    "res\\sound\\31_b.wav"
+YELL_32_B               WAVE                    "res\\sound\\32_b.wav"
+YELL_33_B               WAVE                    "res\\sound\\33_b.wav"
+YELL_34_B               WAVE                    "res\\sound\\34_b.wav"
+YELL_35_B               WAVE                    "res\\sound\\35_b.wav"
+YELL_36_B               WAVE                    "res\\sound\\36_b.wav"
+YELL_41_B               WAVE                    "res\\sound\\41_b.wav"
+YELL_42_B               WAVE                    "res\\sound\\42_b.wav"
+YELL_43_B               WAVE                    "res\\sound\\43_b.wav"
+YELL_44_B               WAVE                    "res\\sound\\44_b.wav"
+YELL_45_B               WAVE                    "res\\sound\\45_b.wav"
+YELL_46_B               WAVE                    "res\\sound\\46_b.wav"
+YELL_51_B               WAVE                    "res\\sound\\51_b.wav"
+YELL_52_B               WAVE                    "res\\sound\\52_b.wav"
+YELL_53_B               WAVE                    "res\\sound\\53_b.wav"
+YELL_54_B               WAVE                    "res\\sound\\54_b.wav"
+YELL_55_B               WAVE                    "res\\sound\\55_b.wav"
+YELL_56_B               WAVE                    "res\\sound\\56_b.wav"
+YELL_61_B               WAVE                    "res\\sound\\61_b.wav"
+YELL_62_B               WAVE                    "res\\sound\\62_b.wav"
+YELL_63_B               WAVE                    "res\\sound\\63_b.wav"
+YELL_64_B               WAVE                    "res\\sound\\64_b.wav"
+YELL_65_B               WAVE                    "res\\sound\\65_b.wav"
+YELL_66_B               WAVE                    "res\\sound\\66_b.wav"
+YELL_71_B               WAVE                    "res\\sound\\71_b.wav"
+YELL_72_B               WAVE                    "res\\sound\\72_b.wav"
+YELL_73_B               WAVE                    "res\\sound\\73_b.wav"
+YELL_74_B               WAVE                    "res\\sound\\74_b.wav"
+YELL_75_B               WAVE                    "res\\sound\\75_b.wav"
+YELL_76_B               WAVE                    "res\\sound\\76_b.wav"
+YELL_81_B               WAVE                    "res\\sound\\81_b.wav"
+YELL_82_B               WAVE                    "res\\sound\\82_b.wav"
+YELL_83_B               WAVE                    "res\\sound\\83_b.wav"
+YELL_84_B               WAVE                    "res\\sound\\84_b.wav"
+YELL_85_B               WAVE                    "res\\sound\\85_b.wav"
+YELL_86_B               WAVE                    "res\\sound\\86_b.wav"
+YELL_91_B               WAVE                    "res\\sound\\91_b.wav"
+YELL_92_B               WAVE                    "res\\sound\\92_b.wav"
+YELL_93_B               WAVE                    "res\\sound\\93_b.wav"
+YELL_94_B               WAVE                    "res\\sound\\94_b.wav"
+YELL_95_B               WAVE                    "res\\sound\\95_b.wav"
+YELL_96_B               WAVE                    "res\\sound\\96_b.wav"
+YELL_101_B              WAVE                    "res\\sound\\101_b.wav"
+YELL_102_B              WAVE                    "res\\sound\\102_b.wav"
+YELL_103_B              WAVE                    "res\\sound\\103_b.wav"
+YELL_104_B              WAVE                    "res\\sound\\104_b.wav"
+YELL_105_B              WAVE                    "res\\sound\\105_b.wav"
+YELL_106_B              WAVE                    "res\\sound\\106_b.wav"
+YELL_111_B              WAVE                    "res\\sound\\111_b.wav"
+YELL_112_B              WAVE                    "res\\sound\\112_b.wav"
+YELL_113_B              WAVE                    "res\\sound\\113_b.wav"
+YELL_114_B              WAVE                    "res\\sound\\114_b.wav"
+YELL_115_B              WAVE                    "res\\sound\\115_b.wav"
+YELL_116_B              WAVE                    "res\\sound\\116_b.wav"
+YELL_121_B              WAVE                    "res\\sound\\121_b.wav"
+YELL_122_B              WAVE                    "res\\sound\\122_b.wav"
+YELL_123_B              WAVE                    "res\\sound\\123_b.wav"
+YELL_124_B              WAVE                    "res\\sound\\124_b.wav"
+YELL_125_B              WAVE                    "res\\sound\\125_b.wav"
+YELL_126_B              WAVE                    "res\\sound\\126_b.wav"
+GAME_OPEN_G             WAVE                    "res\\GAME_OPEN_G.wav"
+YELL_21_G               WAVE                    "res\\sound\\21_g.wav"
+YELL_22_G               WAVE                    "res\\sound\\22_g.wav"
+YELL_23_G               WAVE                    "res\\sound\\23_g.wav"
+YELL_24_G               WAVE                    "res\\sound\\24_g.wav"
+YELL_25_G               WAVE                    "res\\sound\\25_g.wav"
+YELL_26_G               WAVE                    "res\\sound\\26_g.wav"
+YELL_31_G               WAVE                    "res\\sound\\31_g.wav"
+YELL_32_G               WAVE                    "res\\sound\\32_g.wav"
+YELL_33_G               WAVE                    "res\\sound\\33_g.wav"
+YELL_34_G               WAVE                    "res\\sound\\34_g.wav"
+YELL_35_G               WAVE                    "res\\sound\\35_g.wav"
+YELL_36_G               WAVE                    "res\\sound\\36_g.wav"
+YELL_41_G               WAVE                    "res\\sound\\41_g.wav"
+YELL_42_G               WAVE                    "res\\sound\\42_g.wav"
+YELL_43_G               WAVE                    "res\\sound\\43_g.wav"
+YELL_44_G               WAVE                    "res\\sound\\44_g.wav"
+YELL_45_G               WAVE                    "res\\sound\\45_g.wav"
+YELL_46_G               WAVE                    "res\\sound\\46_g.wav"
+YELL_51_G               WAVE                    "res\\sound\\51_g.wav"
+YELL_52_G               WAVE                    "res\\sound\\52_g.wav"
+YELL_53_G               WAVE                    "res\\sound\\53_g.wav"
+YELL_54_G               WAVE                    "res\\sound\\54_g.wav"
+YELL_55_G               WAVE                    "res\\sound\\55_g.wav"
+YELL_56_G               WAVE                    "res\\sound\\56_g.wav"
+YELL_61_G               WAVE                    "res\\sound\\61_g.wav"
+YELL_62_G               WAVE                    "res\\sound\\62_g.wav"
+YELL_63_G               WAVE                    "res\\sound\\63_g.wav"
+YELL_64_G               WAVE                    "res\\sound\\64_g.wav"
+YELL_65_G               WAVE                    "res\\sound\\65_g.wav"
+YELL_66_G               WAVE                    "res\\sound\\66_g.wav"
+YELL_71_G               WAVE                    "res\\sound\\71_g.wav"
+YELL_72_G               WAVE                    "res\\sound\\72_g.wav"
+YELL_73_G               WAVE                    "res\\sound\\73_g.wav"
+YELL_74_G               WAVE                    "res\\sound\\74_g.wav"
+YELL_75_G               WAVE                    "res\\sound\\75_g.wav"
+YELL_76_G               WAVE                    "res\\sound\\76_g.wav"
+YELL_81_G               WAVE                    "res\\sound\\81_g.wav"
+YELL_82_G               WAVE                    "res\\sound\\82_g.wav"
+YELL_83_G               WAVE                    "res\\sound\\83_g.wav"
+YELL_84_G               WAVE                    "res\\sound\\84_g.wav"
+YELL_85_G               WAVE                    "res\\sound\\85_g.wav"
+YELL_86_G               WAVE                    "res\\sound\\86_g.wav"
+YELL_91_G               WAVE                    "res\\sound\\91_g.wav"
+YELL_92_G               WAVE                    "res\\sound\\92_g.wav"
+YELL_93_G               WAVE                    "res\\sound\\93_g.wav"
+YELL_94_G               WAVE                    "res\\sound\\94_g.wav"
+YELL_95_G               WAVE                    "res\\sound\\95_g.wav"
+YELL_96_G               WAVE                    "res\\sound\\96_g.wav"
+YELL_101_G              WAVE                    "res\\sound\\101_g.wav"
+YELL_102_G              WAVE                    "res\\sound\\102_g.wav"
+YELL_103_G              WAVE                    "res\\sound\\103_g.wav"
+YELL_104_G              WAVE                    "res\\sound\\104_g.wav"
+YELL_105_G              WAVE                    "res\\sound\\105_g.wav"
+YELL_106_G              WAVE                    "res\\sound\\106_g.wav"
+YELL_111_G              WAVE                    "res\\sound\\111_g.wav"
+YELL_112_G              WAVE                    "res\\sound\\112_g.wav"
+YELL_113_G              WAVE                    "res\\sound\\113_g.wav"
+YELL_114_G              WAVE                    "res\\sound\\114_g.wav"
+YELL_115_G              WAVE                    "res\\sound\\115_g.wav"
+YELL_116_G              WAVE                    "res\\sound\\116_g.wav"
+YELL_121_G              WAVE                    "res\\sound\\121_g.wav"
+YELL_122_G              WAVE                    "res\\sound\\122_g.wav"
+YELL_123_G              WAVE                    "res\\sound\\123_g.wav"
+YELL_124_G              WAVE                    "res\\sound\\124_g.wav"
+YELL_125_G              WAVE                    "res\\sound\\125_g.wav"
+YELL_126_G              WAVE                    "res\\sound\\126_g.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+KUANG2                  PNG                     "res\\KUANG2.png"
+KUANG                   PNG                     "res\\KUANG.png"
+JETTON                  PNG                     "res\\JETTON.png"
+JETTON2                 PNG                     "res\\JETTON2.png"
+WORD                    PNG                     "res\\WORD.png"
+NUM1                    PNG                     "res\\NOB1.png"
+NUM2                    PNG                     "res\\NOB2.png"
+DICECUP                 PNG                     "res\\SAIZHAO.png"
+WORDSUCC                PNG                     "res\\KAIZHONG.png"
+WORDFAIL                PNG                     "res\\WEIKAIZHONG.png"
+DICESMALL               PNG                     "res\\SHAIZI_SMAL.png"
+AniTDtop                PNG                     "res\\AniTDtop.png"
+AniTDBottom             PNG                     "res\\AniTDBottom.png"
+ANITDBOTTOM-2           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-2.png"
+ANITDBOTTOM-3           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-3.png"
+ANITDBOTTOM-4           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-4.png"
+ANITDBOTTOM-5           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-5.png"
+ANITDBOTTOM-6           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-6.png"
+ANITDBOTTOM-7           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-7.png"
+ANITDBOTTOM-8           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-8.png"
+ANITDBOTTOM-9           PNG                     "res\\AniTDBottom\\ANITDBOTTOM-9.png"
+ANITDBOTTOM-10          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-10.png"
+ANITDBOTTOM-11          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-11.png"
+ANITDBOTTOM-12          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-12.png"
+ANITDBOTTOM-13          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-13.png"
+ANITDBOTTOM-14          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-14.png"
+ANITDBOTTOM-15          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-15.png"
+ANITDBOTTOM-16          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-16.png"
+ANITDBOTTOM-17          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-17.png"
+ANITDBOTTOM-18          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-18.png"
+ANITDBOTTOM-19          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-19.png"
+ANITDBOTTOM-20          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-20.png"
+ANITDBOTTOM-21          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-21.png"
+ANITDBOTTOM-22          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-22.png"
+ANITDBOTTOM-23          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-23.png"
+ANITDBOTTOM-24          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-24.png"
+ANITDBOTTOM-25          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-25.png"
+ANITDBOTTOM-26          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-26.png"
+ANITDBOTTOM-27          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-27.png"
+ANITDBOTTOM-28          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-28.png"
+ANITDBOTTOM-29          PNG                     "res\\AniTDBottom\\ANITDBOTTOM-29.png"
+ANITDBOTTOM-1           PNG                     "res\\AniTDBottom\\ANITDBOTTOM_1.png"
+ANITDTOP_1              PNG                     "res\\AniTDTop\\ANITDTOP_1.png"
+ANITDTOP_2              PNG                     "res\\AniTDTop\\ANITDTOP_2.png"
+ANITDTOP_3              PNG                     "res\\AniTDTop\\ANITDTOP_3.png"
+ANITDTOP_4              PNG                     "res\\AniTDTop\\ANITDTOP_4.png"
+ANITDTOP_5              PNG                     "res\\AniTDTop\\ANITDTOP_5.png"
+ANITDTOP_6              PNG                     "res\\AniTDTop\\ANITDTOP_6.png"
+ANITDTOP_7              PNG                     "res\\AniTDTop\\ANITDTOP_7.png"
+ANITDTOP_8              PNG                     "res\\AniTDTop\\ANITDTOP_8.png"
+ANITDTOP_9              PNG                     "res\\AniTDTop\\ANITDTOP_9.png"
+ANITDTOP_10             PNG                     "res\\AniTDTop\\ANITDTOP_10.png"
+ANITDTOP_11             PNG                     "res\\AniTDTop\\ANITDTOP_11.png"
+ANITDTOP_12             PNG                     "res\\AniTDTop\\ANITDTOP_12.png"
+ANITDTOP_13             PNG                     "res\\AniTDTop\\ANITDTOP_13.png"
+ANITDTOP_14             PNG                     "res\\AniTDTop\\ANITDTOP_14.png"
+ANITDTOP_15             PNG                     "res\\AniTDTop\\ANITDTOP_15.png"
+ANITDTOP_16             PNG                     "res\\AniTDTop\\ANITDTOP_16.png"
+ANITDTOP_17             PNG                     "res\\AniTDTop\\ANITDTOP_17.png"
+ANITDTOP_18             PNG                     "res\\AniTDTop\\ANITDTOP_18.png"
+ANITDTOP_19             PNG                     "res\\AniTDTop\\ANITDTOP_19.png"
+ANITDTOP_20             PNG                     "res\\AniTDTop\\ANITDTOP_20.png"
+ANITDTOP_21             PNG                     "res\\AniTDTop\\ANITDTOP_21.png"
+ANITDTOP_22             PNG                     "res\\AniTDTop\\ANITDTOP_22.png"
+ANITDTOP_23             PNG                     "res\\AniTDTop\\ANITDTOP_23.png"
+ANITDTOP_24             PNG                     "res\\AniTDTop\\ANITDTOP_24.png"
+ANITDTOP_25             PNG                     "res\\AniTDTop\\ANITDTOP_25.png"
+ANITDTOP_26             PNG                     "res\\AniTDTop\\ANITDTOP_26.png"
+ANITDTOP_27             PNG                     "res\\AniTDTop\\ANITDTOP_27.png"
+ANITDTOP_28             PNG                     "res\\AniTDTop\\ANITDTOP_28.png"
+ANITDTOP_29             PNG                     "res\\AniTDTop\\ANITDTOP_29.png"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

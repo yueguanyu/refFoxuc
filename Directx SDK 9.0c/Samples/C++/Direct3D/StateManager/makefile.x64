@@ -1,0 +1,292 @@
+# Microsoft Developer Studio Generated NMAKE File, Based on StateMan.dsp
+!IF "$(CFG)" == ""
+CFG=StateMan - Win64 Debug
+!MESSAGE No configuration specified. Defaulting to StateMan - Win64 Debug.
+!ENDIF 
+
+!IF "$(CFG)" != "StateMan - Win64 Debug" && "$(CFG)" != "StateMan - Win64 Release"
+!MESSAGE Invalid configuration "$(CFG)" specified.
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "makefile.X64" CFG="StateMan - Win64 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "StateMan - Win64 Debug" (based on "Win64 (X64) Application")
+!MESSAGE "StateMan - Win64 Release" (based on "Win64 (X64) Application")
+!MESSAGE 
+!ERROR An invalid configuration is specified.
+!ENDIF 
+
+!IF "$(OS)" == "Windows_NT"
+NULL=
+!ELSE 
+NULL=nul
+!ENDIF 
+
+!IF  "$(CFG)" == "StateMan - Win64 Debug"
+
+OUTDIR=.\Debug
+INTDIR=.\Debug
+# Begin Custom Macros
+OutDir=.\Debug
+# End Custom Macros
+
+ALL : "$(OUTDIR)\StateManager.exe" "$(OUTDIR)\StateMan.pch"
+
+
+CLEAN :
+	-@erase "$(INTDIR)\dxstdafx.obj"
+	-@erase "$(INTDIR)\DXUT.obj"
+	-@erase "$(INTDIR)\DXUTenum.obj"
+	-@erase "$(INTDIR)\DXUTgui.obj"
+	-@erase "$(INTDIR)\DXUTmisc.obj"
+	-@erase "$(INTDIR)\DXUTSettingsDlg.obj"
+	-@erase "$(INTDIR)\EffectStateManager.obj"
+	-@erase "$(INTDIR)\LoadSceneFromX.obj"
+	-@erase "$(INTDIR)\renderables.obj"
+	-@erase "$(INTDIR)\StateMan.pch"
+	-@erase "$(INTDIR)\StateManager.res"
+	-@erase "$(INTDIR)\StateManagerApp.obj"
+	-@erase "$(INTDIR)\vc60.idb"
+	-@erase "$(INTDIR)\vc60.pdb"
+	-@erase "$(OUTDIR)\StateMan.pdb"
+	-@erase "$(OUTDIR)\StateManager.exe"
+	-@erase "$(OUTDIR)\StateManager.ilk"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+
+CPP=cl.exe
+CPP_PROJ=/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\Common" /D "WIN64" /D "_DEBUG" /D "_WINDOWS" /D "UNICODE" /D "UNICODE" /D "_UNICODE" /D "_MBCS" /Fp"$(INTDIR)\StateMan.pch" /Yc"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+MTL=midl.exe
+MTL_PROJ=/nologo /win64 
+RSC=rc.exe
+RSC_PROJ=/l 0x409 /fo"$(INTDIR)\StateManager.res" /d "_UNICODE" /d "UNICODE" 
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\StateMan.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxerr9.lib dxguid.lib d3dx9dt.lib d3d9.lib winmm.lib comctl32.lib /nologo /subsystem:windows /incremental:yes /pdb:"$(OUTDIR)\StateMan.pdb" /debug /machine:IX64 /out:"$(OUTDIR)\StateManager.exe" /pdbtype:sept 
+LINK32_OBJS= \
+	"$(INTDIR)\dxstdafx.obj" \
+	"$(INTDIR)\DXUT.obj" \
+	"$(INTDIR)\DXUTenum.obj" \
+	"$(INTDIR)\DXUTgui.obj" \
+	"$(INTDIR)\DXUTmisc.obj" \
+	"$(INTDIR)\DXUTSettingsDlg.obj" \
+	"$(INTDIR)\LoadSceneFromX.obj" \
+	"$(INTDIR)\renderables.obj" \
+	"$(INTDIR)\EffectStateManager.obj" \
+	"$(INTDIR)\StateManagerApp.obj" \
+	"$(INTDIR)\StateManager.res"
+
+"$(OUTDIR)\StateManager.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ELSEIF  "$(CFG)" == "StateMan - Win64 Release"
+
+OUTDIR=.\Release
+INTDIR=.\Release
+# Begin Custom Macros
+OutDir=.\Release
+# End Custom Macros
+
+ALL : "$(OUTDIR)\StateManager.exe" "$(OUTDIR)\StateMan.pch"
+
+
+CLEAN :
+	-@erase "$(INTDIR)\dxstdafx.obj"
+	-@erase "$(INTDIR)\DXUT.obj"
+	-@erase "$(INTDIR)\DXUTenum.obj"
+	-@erase "$(INTDIR)\DXUTgui.obj"
+	-@erase "$(INTDIR)\DXUTmisc.obj"
+	-@erase "$(INTDIR)\DXUTSettingsDlg.obj"
+	-@erase "$(INTDIR)\EffectStateManager.obj"
+	-@erase "$(INTDIR)\LoadSceneFromX.obj"
+	-@erase "$(INTDIR)\renderables.obj"
+	-@erase "$(INTDIR)\StateMan.pch"
+	-@erase "$(INTDIR)\StateManager.res"
+	-@erase "$(INTDIR)\StateManagerApp.obj"
+	-@erase "$(INTDIR)\vc60.pdb"
+	-@erase "$(OUTDIR)\StateManager.exe"
+	-@erase "$(OUTDIR)\StateManager.pdb"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+
+CPP=cl.exe
+CPP_PROJ=/nologo /ML /W3 /GX /Zi /D "WIN64" /D "NDEBUG" /D "_WINDOWS" /D "UNICODE" /D "UNICODE" /D "_UNICODE" /D "_MBCS" /Fp"$(INTDIR)\StateMan.pch" /Yc"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+MTL=midl.exe
+MTL_PROJ=/nologo /win64 
+RSC=rc.exe
+RSC_PROJ=/l 0x409 /fo"$(INTDIR)\StateManager.res" 
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\StateMan.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxerr9.lib dxguid.lib d3dx9.lib d3d9.lib winmm.lib comctl32.lib /nologo /subsystem:windows /incremental:no /pdb:"$(OUTDIR)\StateManager.pdb" /debug /machine:IX64 /out:"$(OUTDIR)\StateManager.exe" /pdbtype:sept /opt:ref /opt:icf 
+LINK32_OBJS= \
+	"$(INTDIR)\dxstdafx.obj" \
+	"$(INTDIR)\DXUT.obj" \
+	"$(INTDIR)\DXUTenum.obj" \
+	"$(INTDIR)\DXUTgui.obj" \
+	"$(INTDIR)\DXUTmisc.obj" \
+	"$(INTDIR)\DXUTSettingsDlg.obj" \
+	"$(INTDIR)\LoadSceneFromX.obj" \
+	"$(INTDIR)\renderables.obj" \
+	"$(INTDIR)\EffectStateManager.obj" \
+	"$(INTDIR)\StateManagerApp.obj" \
+	"$(INTDIR)\StateManager.res"
+
+"$(OUTDIR)\StateManager.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ENDIF 
+
+
+!IF "$(NO_EXTERNAL_DEPS)" != "1"
+!IF EXISTS("StateMan.dep")
+!INCLUDE "StateMan.dep"
+!ELSE 
+!MESSAGE Warning: cannot find "StateMan.dep"
+!ENDIF 
+!ENDIF 
+
+
+!IF "$(CFG)" == "StateMan - Win64 Debug" || "$(CFG)" == "StateMan - Win64 Release"
+SOURCE=..\..\Common\dxstdafx.cpp
+
+"$(INTDIR)\dxstdafx.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\DXUT.cpp
+
+"$(INTDIR)\DXUT.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\DXUTenum.cpp
+
+"$(INTDIR)\DXUTenum.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\DXUTgui.cpp
+
+"$(INTDIR)\DXUTgui.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\DXUTmisc.cpp
+
+"$(INTDIR)\DXUTmisc.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\DXUTSettingsDlg.cpp
+
+"$(INTDIR)\DXUTSettingsDlg.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=.\StateManager.rc
+
+"$(INTDIR)\StateManager.res" : $(SOURCE) "$(INTDIR)"
+	$(RSC) $(RSC_PROJ) $(SOURCE)
+
+
+SOURCE=.\LoadSceneFromX.cpp
+
+"$(INTDIR)\LoadSceneFromX.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+
+
+SOURCE=.\renderables.cpp
+
+"$(INTDIR)\renderables.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+
+
+SOURCE=.\EffectStateManager.cpp
+
+"$(INTDIR)\EffectStateManager.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+
+
+SOURCE=.\StateManagerApp.cpp
+
+"$(INTDIR)\StateManagerApp.obj"	"$(INTDIR)\StateMan.pch" : $(SOURCE) "$(INTDIR)"
+
+
+
+!ENDIF 
+
+

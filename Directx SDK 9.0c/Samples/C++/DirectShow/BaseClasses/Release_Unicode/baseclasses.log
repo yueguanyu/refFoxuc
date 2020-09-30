@@ -1,0 +1,85 @@
+﻿生成启动时间为 2013-2-11 16:24:41。
+     1>项目“D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\baseclasses.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Release_Unicode\baseclasses.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Visual Studio 2010\VC\bin\CL.exe /c /I. /I..\..\..\..\include /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D _MBCS /D _LIB /D _WIN32_DCOM /D WINVER=0x400 /D WIN32 /D UNICODE /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"streams.h" /Fp".\Release_Unicode/baseclasses.pch" /Fo".\Release_Unicode/" /Fd".\Release_Unicode/vc100.pdb" /Gz /TP /analyze- /errorReport:prompt dllentry.cpp
+         dllentry.cpp
+     1>D:\Directx SDK 2004\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         D:\Visual Studio 2010\VC\bin\CL.exe /c /I. /I..\..\..\..\include /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D NDEBUG /D _MBCS /D _LIB /D _WIN32_DCOM /D WINVER=0x400 /D WIN32 /D UNICODE /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"streams.h" /Fp".\Release_Unicode/baseclasses.pch" /Fo".\Release_Unicode/" /Fd".\Release_Unicode/vc100.pdb" /Gz /TP /analyze- /errorReport:prompt amextra.cpp amfilter.cpp amvideo.cpp combase.cpp cprop.cpp ctlutil.cpp ddmm.cpp dllsetup.cpp mtype.cpp outputq.cpp pstream.cpp pullpin.cpp refclock.cpp renbase.cpp schedule.cpp seekpt.cpp source.cpp strmctl.cpp sysclock.cpp transfrm.cpp transip.cpp videoctl.cpp vtrans.cpp winctrl.cpp winutil.cpp wxdebug.cpp wxlist.cpp wxutil.cpp
+         amextra.cpp
+         amfilter.cpp
+         amvideo.cpp
+         combase.cpp
+         cprop.cpp
+         ctlutil.cpp
+         ddmm.cpp
+         dllsetup.cpp
+         mtype.cpp
+         outputq.cpp
+         pstream.cpp
+         pullpin.cpp
+         refclock.cpp
+         renbase.cpp
+         schedule.cpp
+         seekpt.cpp
+         source.cpp
+         strmctl.cpp
+         sysclock.cpp
+         transfrm.cpp
+         正在生成代码...
+         正在编译...
+         transip.cpp
+         videoctl.cpp
+         vtrans.cpp
+         winctrl.cpp
+         winutil.cpp
+         wxdebug.cpp
+     1>wxdebug.cpp(11): warning C4603: “_WINDLL”: 未定义宏或在预编译头使用后定义发生改变
+                 将宏添加到预编译头中，而不是在此处定义
+                 wxdebug.cpp(13) : 使用预编译头
+     1>D:\Directx SDK 2004\include\uuids.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         wxlist.cpp
+         wxutil.cpp
+         正在生成代码...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\.\Release_Unicode\baseclasses.lib) 与 Library 的 OutputFile 属性值(D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\Release_Unicode\STRMBASE.lib)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1153,5): warning MSB8012: TargetName(baseclasses) 与 Library 的 OutputFile 属性值(STRMBASE)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Lib.OutputFile) 中指定的值匹配。
+       Lib:
+         D:\Visual Studio 2010\VC\bin\Lib.exe /OUT:"Release_Unicode\STRMBASE.lib" /NOLOGO .\Release_Unicode/amextra.obj
+         .\Release_Unicode/amfilter.obj
+         .\Release_Unicode/amvideo.obj
+         .\Release_Unicode/combase.obj
+         .\Release_Unicode/cprop.obj
+         .\Release_Unicode/ctlutil.obj
+         .\Release_Unicode/ddmm.obj
+         .\Release_Unicode/dllentry.obj
+         .\Release_Unicode/dllsetup.obj
+         .\Release_Unicode/mtype.obj
+         .\Release_Unicode/outputq.obj
+         .\Release_Unicode/pstream.obj
+         .\Release_Unicode/pullpin.obj
+         .\Release_Unicode/refclock.obj
+         .\Release_Unicode/renbase.obj
+         .\Release_Unicode/schedule.obj
+         .\Release_Unicode/seekpt.obj
+         .\Release_Unicode/source.obj
+         .\Release_Unicode/strmctl.obj
+         .\Release_Unicode/sysclock.obj
+         .\Release_Unicode/transfrm.obj
+         .\Release_Unicode/transip.obj
+         .\Release_Unicode/videoctl.obj
+         .\Release_Unicode/vtrans.obj
+         .\Release_Unicode/winctrl.obj
+         .\Release_Unicode/winutil.obj
+         .\Release_Unicode/wxdebug.obj
+         .\Release_Unicode/wxlist.obj
+         .\Release_Unicode/wxutil.obj ..\..\..\..\lib\strmiids.lib  /nodefaultlib  
+         baseclasses.vcxproj -> D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\.\Release_Unicode\baseclasses.lib
+       FinalizeBuildStatus:
+         正在删除文件“.\Release_Unicode\baseclasses.unsuccessfulbuild”。
+         正在对“.\Release_Unicode\baseclasses.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Directx SDK 2004\Samples\C++\DirectShow\BaseClasses\baseclasses.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.73

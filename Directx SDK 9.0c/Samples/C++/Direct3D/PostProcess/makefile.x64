@@ -1,0 +1,292 @@
+# Microsoft Developer Studio Generated NMAKE File, Based on PostProcess.dsp
+!IF "$(CFG)" == ""
+CFG=PostProcess - Win64 Debug
+!MESSAGE No configuration specified. Defaulting to PostProcess - Win64 Debug.
+!ENDIF 
+
+!IF "$(CFG)" != "PostProcess - Win64 Debug" && "$(CFG)" != "PostProcess - Win64 Release"
+!MESSAGE Invalid configuration "$(CFG)" specified.
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "makefile.X64" CFG="PostProcess - Win64 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "PostProcess - Win64 Debug" (based on "Win64 (X64) Application")
+!MESSAGE "PostProcess - Win64 Release" (based on "Win64 (X64) Application")
+!MESSAGE 
+!ERROR An invalid configuration is specified.
+!ENDIF 
+
+!IF "$(OS)" == "Windows_NT"
+NULL=
+!ELSE 
+NULL=nul
+!ENDIF 
+
+!IF  "$(CFG)" == "PostProcess - Win64 Debug"
+
+OUTDIR=.\Debug
+INTDIR=.\Debug
+# Begin Custom Macros
+OutDir=.\Debug
+# End Custom Macros
+
+ALL : "$(OUTDIR)\PostProcess.exe"
+
+
+CLEAN :
+	-@erase "$(INTDIR)\dxstdafx.obj"
+	-@erase "$(INTDIR)\dxut.obj"
+	-@erase "$(INTDIR)\dxutenum.obj"
+	-@erase "$(INTDIR)\dxutgui.obj"
+	-@erase "$(INTDIR)\DXUTMesh.obj"
+	-@erase "$(INTDIR)\dxutmisc.obj"
+	-@erase "$(INTDIR)\dxutsettingsdlg.obj"
+	-@erase "$(INTDIR)\PostProcess.obj"
+	-@erase "$(INTDIR)\PostProcess.pch"
+	-@erase "$(INTDIR)\PostProcess.res"
+	-@erase "$(INTDIR)\vc60.idb"
+	-@erase "$(INTDIR)\vc60.pdb"
+	-@erase "$(OUTDIR)\PostProcess.exe"
+	-@erase "$(OUTDIR)\PostProcess.ilk"
+	-@erase "$(OUTDIR)\PostProcess.pdb"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+
+CPP=cl.exe
+CPP_PROJ=/nologo /MT /W4 /Gm /GX /ZI /Od /I "..\..\common" /D "WIN64" /D "_WINDOWS" /D "_DEBUG" /Fp"$(INTDIR)\PostProcess.pch" /Yu"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+MTL=midl.exe
+MTL_PROJ=/nologo /win64 
+RSC=rc.exe
+RSC_PROJ=/l 0x409 /fo"$(INTDIR)\PostProcess.res" 
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\PostProcess.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxerr9.lib d3dx9dt.lib d3d9.lib d3dxof.lib dxguid.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comctl32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /incremental:yes /pdb:"$(OUTDIR)\PostProcess.pdb" /debug /machine:IX64 /out:"$(OUTDIR)\PostProcess.exe" /pdbtype:sept 
+LINK32_OBJS= \
+	"$(INTDIR)\dxstdafx.obj" \
+	"$(INTDIR)\dxut.obj" \
+	"$(INTDIR)\dxutenum.obj" \
+	"$(INTDIR)\dxutgui.obj" \
+	"$(INTDIR)\DXUTMesh.obj" \
+	"$(INTDIR)\dxutmisc.obj" \
+	"$(INTDIR)\dxutsettingsdlg.obj" \
+	"$(INTDIR)\PostProcess.obj" \
+	"$(INTDIR)\PostProcess.res"
+
+"$(OUTDIR)\PostProcess.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ELSEIF  "$(CFG)" == "PostProcess - Win64 Release"
+
+OUTDIR=.\Release
+INTDIR=.\Release
+# Begin Custom Macros
+OutDir=.\Release
+# End Custom Macros
+
+ALL : "$(OUTDIR)\PostProcess.exe"
+
+
+CLEAN :
+	-@erase "$(INTDIR)\dxstdafx.obj"
+	-@erase "$(INTDIR)\dxut.obj"
+	-@erase "$(INTDIR)\dxutenum.obj"
+	-@erase "$(INTDIR)\dxutgui.obj"
+	-@erase "$(INTDIR)\DXUTMesh.obj"
+	-@erase "$(INTDIR)\dxutmisc.obj"
+	-@erase "$(INTDIR)\dxutsettingsdlg.obj"
+	-@erase "$(INTDIR)\PostProcess.obj"
+	-@erase "$(INTDIR)\PostProcess.pch"
+	-@erase "$(INTDIR)\PostProcess.res"
+	-@erase "$(INTDIR)\vc60.pdb"
+	-@erase "$(OUTDIR)\PostProcess.exe"
+
+"$(OUTDIR)" :
+    if not exist "$(OUTDIR)/$(NULL)" mkdir "$(OUTDIR)"
+
+CPP=cl.exe
+CPP_PROJ=/nologo /MT /W4 /GX /Zi /O2 /I "..\..\common" /D "WIN64" /D "_WINDOWS" /D "NDEBUG" /Fp"$(INTDIR)\PostProcess.pch" /Yu"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /GF /c 
+
+.c{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.obj::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.c{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cpp{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+.cxx{$(INTDIR)}.sbr::
+   $(CPP) @<<
+   $(CPP_PROJ) $< 
+<<
+
+MTL=midl.exe
+MTL_PROJ=/nologo /win64 
+RSC=rc.exe
+RSC_PROJ=/l 0x409 /fo"$(INTDIR)\PostProcess.res" 
+BSC32=bscmake.exe
+BSC32_FLAGS=/nologo /o"$(OUTDIR)\PostProcess.bsc" 
+BSC32_SBRS= \
+	
+LINK32=link.exe
+LINK32_FLAGS=kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib dxerr9.lib d3dx9.lib d3d9.lib d3dxof.lib dxguid.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comctl32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib /nologo /subsystem:windows /incremental:no /pdb:"$(OUTDIR)\PostProcess.pdb" /machine:IX64 /out:"$(OUTDIR)\PostProcess.exe" /pdbtype:sept 
+LINK32_OBJS= \
+	"$(INTDIR)\dxstdafx.obj" \
+	"$(INTDIR)\dxut.obj" \
+	"$(INTDIR)\dxutenum.obj" \
+	"$(INTDIR)\dxutgui.obj" \
+	"$(INTDIR)\DXUTMesh.obj" \
+	"$(INTDIR)\dxutmisc.obj" \
+	"$(INTDIR)\dxutsettingsdlg.obj" \
+	"$(INTDIR)\PostProcess.obj" \
+	"$(INTDIR)\PostProcess.res"
+
+"$(OUTDIR)\PostProcess.exe" : "$(OUTDIR)" $(DEF_FILE) $(LINK32_OBJS)
+    $(LINK32) @<<
+  $(LINK32_FLAGS) $(LINK32_OBJS)
+<<
+
+!ENDIF 
+
+
+!IF "$(NO_EXTERNAL_DEPS)" != "1"
+!IF EXISTS("PostProcess.dep")
+!INCLUDE "PostProcess.dep"
+!ELSE 
+!MESSAGE Warning: cannot find "PostProcess.dep"
+!ENDIF 
+!ENDIF 
+
+
+!IF "$(CFG)" == "PostProcess - Win64 Debug" || "$(CFG)" == "PostProcess - Win64 Release"
+
+SOURCE=PostProcess.rc
+
+"$(INTDIR)\PostProcess.res" : $(SOURCE) "$(INTDIR)"
+	$(RSC) $(RSC_PROJ) $(SOURCE)
+
+SOURCE=..\..\Common\dxstdafx.cpp
+
+!IF  "$(CFG)" == "PostProcess - Win64 Release"
+
+CPP_SWITCHES=/nologo /MT /W3 /GX /Zi /O2 /I "..\..\common" /D "WIN64" /D "_WINDOWS" /D "NDEBUG" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PostProcess.pch" /Yc"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\" /GF /c 
+
+"$(INTDIR)\dxstdafx.obj"	"$(INTDIR)\PostProcess.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) @<<
+  $(CPP_SWITCHES) $(SOURCE)
+<<
+
+
+!ELSEIF  "$(CFG)" == "PostProcess - Win64 Debug"
+
+CPP_SWITCHES=/nologo /MT /W3 /Gm /GX /ZI /Od /I "..\..\common" /D "WIN64" /D "_WINDOWS" /D "_DEBUG" /D "UNICODE" /D "_UNICODE" /Fp"$(INTDIR)\PostProcess.pch" /Yc"dxstdafx.h" /Fo"$(INTDIR)\\" /Fd"$(INTDIR)\\"  /c 
+
+"$(INTDIR)\dxstdafx.obj"	"$(INTDIR)\PostProcess.pch" : $(SOURCE) "$(INTDIR)"
+	$(CPP) @<<
+  $(CPP_SWITCHES) $(SOURCE)
+<<
+
+
+!ENDIF 
+
+SOURCE=..\..\Common\dxut.cpp
+
+"$(INTDIR)\dxut.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutenum.cpp
+
+"$(INTDIR)\dxutenum.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutgui.cpp
+
+"$(INTDIR)\dxutgui.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\DXUTMesh.cpp
+
+"$(INTDIR)\DXUTMesh.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutmisc.cpp
+
+"$(INTDIR)\dxutmisc.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+SOURCE=..\..\Common\dxutsettingsdlg.cpp
+
+"$(INTDIR)\dxutsettingsdlg.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+	$(CPP) $(CPP_PROJ) $(SOURCE)
+
+
+
+SOURCE=PostProcess.cpp
+
+"$(INTDIR)\PostProcess.obj" : $(SOURCE) "$(INTDIR)" "$(INTDIR)\PostProcess.pch"
+
+
+!ENDIF 
+
+
